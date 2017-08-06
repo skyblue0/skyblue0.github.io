@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-08-06T07:27:06.183Z</updated>
+  <updated>2017-08-06T07:28:07.122Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,12 +20,14 @@
     <link href="http://yoursite.com/2017/08/06/test/"/>
     <id>http://yoursite.com/2017/08/06/test/</id>
     <published>2017-08-06T07:27:06.000Z</published>
-    <updated>2017-08-06T07:27:06.183Z</updated>
+    <updated>2017-08-06T07:28:07.122Z</updated>
     
     <summary type="html">
     
     </summary>
     
+    
+      <category term="�໤�˸��˹�" scheme="http://yoursite.com/tags/%EF%BF%BD%E0%BB%A4%EF%BF%BD%CB%B8%EF%BF%BD%EF%BF%BD%CB%B9%EF%BF%BD/"/>
     
   </entry>
   

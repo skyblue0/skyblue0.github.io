@@ -5,19 +5,20 @@
   top: 30px;
   width: 35px;
   height: 35px;
-  z-index: 20;
+  z-index: 33;
   border-radius: 50%;
-  transition: all 1s;
   background-color: #fff;
   background: url("./img/music.jpg");
   background-size: cover;
-  animation: rotateSelf 1s linear;
+  animation: rotateSelf 3s linear;
 }
 @keyframes rotateSelf {
   from{
+    transition: all 1s;
     transform: rotate(0deg);
   }
   to{
+    transition: all 1s;
     transform: rotate(360deg);
   }
 }

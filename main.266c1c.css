@@ -10,7 +10,7 @@
   background-color: #fff;
   background: url("./img/music.jpg");
   background-size: cover;
-  animation: rotateSelf 3s linear;
+  animation: rotateSelf 3s linear infinite;
 }
 @keyframes rotateSelf {
   from{

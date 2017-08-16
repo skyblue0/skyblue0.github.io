@@ -4,13 +4,23 @@
     
     <entry>
       <title><![CDATA[Test]]></title>
-      <url>/2017/08/06/test/</url>
+      <url>/2017/08/06/test1/</url>
       <content type="html"></content>
       
+        <categories>
+            
+            <category> JavaScript </category>
+            
+            <category> DOM </category>
+            
+        </categories>
+        
         
         <tags>
             
-            <tag> 监护人个人股 千佛山 </tag>
+            <tag> 核算 </tag>
+            
+            <tag> 千佛山 </tag>
             
         </tags>
         
@@ -18,13 +28,13 @@
     
     <entry>
       <title><![CDATA[Test]]></title>
-      <url>/2017/08/06/test1/</url>
+      <url>/2017/08/06/test/</url>
       <content type="html"></content>
       
         
         <tags>
             
-            <tag> 核算 </tag>
+            <tag> 监护人个人股 千佛山 </tag>
             
         </tags>
         

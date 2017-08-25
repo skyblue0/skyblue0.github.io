@@ -26,6 +26,298 @@
     </entry>
     
     <entry>
+      <title><![CDATA[Echarts（图表）插件的使用]]></title>
+      <url>/2016/10/16/echarts%EF%BC%88%E5%9B%BE%E8%A1%A8%EF%BC%89%E6%8F%92%E4%BB%B6%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
+      <content type="html"><![CDATA[<p>#Echarts</p>
+<blockquote>
+<p>ECharts 提供了常规的折线图，柱状图，散点图，饼图，K线图，用于统计的盒形图，用于地理数据可视化的地图，热力图，线图，用于关系数据可视化的关系图，treemap，多维数据可视化的平行坐标，还有用于 BI 的漏斗图，仪表盘，并且支持图与图之间的混搭。<br><a href="http://echarts.baidu.com/" target="_blank" rel="external">官网</a></p>
+<p><a href="http://echarts.baidu.com/tutorial.html#5%20%E5%88%86%E9%92%9F%E4%B8%8A%E6%89%8B%20ECharts" target="_blank" rel="external">文档</a></p>
+<p><a href="https://github.com/ecomfe/echarts" target="_blank" rel="external">github地址</a></p>
+<p>##Echarts的使用</p>
+<ul>
+<li>引入echarts文件<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;script src=<span class="string">"echarts.min.js"</span>&gt;&lt;/script&gt;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+</blockquote>
+<ul>
+<li><p>HTML结构</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"main"</span> <span class="attr">style</span>=<span class="string">"width: 600px;height:400px;"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
+</li>
+<li><p>js代码</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div></pre></td><td class="code"><pre><div class="line"><span class="number">1.</span> 基于准备好的dom对象，初始化echarts实例</div><div class="line"><span class="keyword">var</span> myChart = echarts.init(<span class="built_in">document</span>.getElementById(<span class="string">'main'</span>));</div><div class="line"></div><div class="line"><span class="number">2.</span> 指定图表的配置项和数据</div><div class="line"><span class="keyword">var</span> option = &#123;</div><div class="line">   title: &#123;</div><div class="line">     text: <span class="string">'ECharts 入门示例'</span>  </div><div class="line">   &#125;,</div><div class="line">   tooltip: &#123;&#125;,</div><div class="line">   legend: &#123;</div><div class="line">     data: [<span class="string">'销量'</span>]</div><div class="line">   &#125;,</div><div class="line">   xAxis: &#123;</div><div class="line">     data: [<span class="string">"衬衫"</span>, <span class="string">"羊毛衫"</span>, <span class="string">"雪纺衫"</span>, <span class="string">"裤子"</span>, <span class="string">"高跟鞋"</span>, <span class="string">"袜子"</span>]</div><div class="line">   &#125;,</div><div class="line">   yAxis: &#123;&#125;,</div><div class="line">   series: [&#123;</div><div class="line">     name: <span class="string">'销量'</span>,</div><div class="line">     type: <span class="string">'bar'</span>,</div><div class="line">     data: [<span class="number">5</span>, <span class="number">20</span>, <span class="number">36</span>, <span class="number">10</span>, <span class="number">10</span>, <span class="number">20</span>]</div><div class="line">    &#125;]</div><div class="line">&#125;;</div><div class="line"></div><div class="line"><span class="number">3.</span> 使用刚指定的配置项和数据显示图表。</div><div class="line">myChart.setOption(option);</div></pre></td></tr></table></figure>
+</li>
+<li><p>基本参数</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">title:图表标题</div><div class="line">legend：图例</div><div class="line">xAxis：横轴数据项</div><div class="line">yAxis：纵轴数据</div><div class="line">series：横轴每项数据</div></pre></td></tr></table></figure></li>
+</ul>
+]]></content>
+      
+        <categories>
+            
+            <category> JavaScript </category>
+            
+            <category> echarts </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> 教程 </tag>
+            
+            <tag> 学习 </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Ckeditor（富文本编辑）插件的使用教程]]></title>
+      <url>/2016/08/06/ckeditor%EF%BC%88%E5%AF%8C%E6%96%87%E6%9C%AC%E7%BC%96%E8%BE%91%EF%BC%89%E6%8F%92%E4%BB%B6%E7%9A%84%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</url>
+      <content type="html"><![CDATA[<h1 id="ckeditor的使用"><a href="#ckeditor的使用" class="headerlink" title="ckeditor的使用"></a>ckeditor的使用</h1><blockquote>
+<p>富文本编辑器，Rich Text Editor, 简称 RTE, 它提供类似于 Microsoft Word 的编辑功能，容易被不会编写 HTML 的用户并需要设置各种文本格式的用户所喜爱。比较流行的富文本编辑器有：国外的ckeditor， 国内的ueditor。<br><a href="https://ckeditor.com/" target="_blank" rel="external">ckeditor官网</a><br><a href="https://github.com/galetahub/ckeditor/" target="_blank" rel="external">github地址</a></p>
+<p><a href="https://docs.ckeditor.com/#!/guide" target="_blank" rel="external">官方文档</a></p>
+</blockquote>
+<h3 id="使用步骤"><a href="#使用步骤" class="headerlink" title="使用步骤"></a>使用步骤</h3><ul>
+<li>html代码</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">textarea</span> <span class="attr">id</span>=<span class="string">"demo"</span>&gt;</span><span class="tag">&lt;/<span class="name">textarea</span>&gt;</span></div></pre></td></tr></table></figure>
+<ul>
+<li>引入文件</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="comment">&lt;!--不依赖jquery--&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">'ckeditor/ckeditor.js'</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div></pre></td></tr></table></figure>
+<ul>
+<li>使用插件</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">CKEDITOR.replace( <span class="string">'demo'</span> );</div></pre></td></tr></table></figure>
+<ul>
+<li>同步文本域内容</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">for</span> ( instance <span class="keyword">in</span> CKEDITOR.instances ) &#123;</div><div class="line">   CKEDITOR.instances[instance].updateElement();</div><div class="line">&#125;</div></pre></td></tr></table></figure>]]></content>
+      
+        <categories>
+            
+            <category> ckeditor </category>
+            
+            <category> ckeditor </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> 教程 </tag>
+            
+            <tag> 学习 </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[require.js(模块化）使用教程]]></title>
+      <url>/2016/07/06/require-js-%E6%A8%A1%E5%9D%97%E5%8C%96%EF%BC%89%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</url>
+      <content type="html"><![CDATA[<h1 id="模块化的标准"><a href="#模块化的标准" class="headerlink" title="模块化的标准"></a>模块化的标准</h1><p>有了模块，我们就可以更方便地使用别人的代码,想要什么功能，就加载什么模块。这样做有一个前提，那就是大家必须以同样的方式编写模块，否则你有你的写法，我有我的写法，岂不是乱了套！ 【螺丝与螺帽】</p>
+<ul>
+<li>CommonJS：是一个模块化的标准，Node.js在使用的模块化标准。适用与后端开发的标准。</li>
+<li>AMD（Async Module Definition）：在CommonJS基础上衍生出来的适用于前端开发的模块化标准。<ul>
+<li>特点：预加载，第一次访问时，将所有的文件都加载出来。</li>
+<li>优点：第一次访问完成以后，再次访问速度会很快</li>
+<li>缺点：第一次加载，需要的时间会比较长</li>
+<li>代表：requirejs</li>
+</ul>
+</li>
+<li>CMD（Common Module Definition）：在CommonJS基础上衍生出来的适用于前端开发的模块化标准。<ul>
+<li>特点：懒加载，只有使用到的时候，才会加载对应的模块。</li>
+<li>优点：第一次访问速度会比较快</li>
+<li>缺点：再次访问其他模块时会比较慢。</li>
+<li>代表：seajs  </li>
+</ul>
+</li>
+</ul>
+<h1 id="require-JS"><a href="#require-JS" class="headerlink" title="require.JS"></a>require.JS</h1><h2 id="require-js概念"><a href="#require-js概念" class="headerlink" title="require.js概念"></a>require.js概念</h2><p>requirejs是AMD规范的一个实现，require.js是一个javascript文件，也是一个模块加载器。<strong>模块加载器：相当于canvas中封装的图片加载器，只不过一个是加载图片的，一个加载js，文件的类型不一样。</strong> </p>
+<p><a href="http://requirejs.org/" target="_blank" rel="external">官网地址</a></p>
+<p><a href="https://github.com/requirejs/requirejs" target="_blank" rel="external">github地址</a></p>
+<p>requirejs主要提供两大功能：</p>
+<ul>
+<li>加载模块：可以加载AMD规范的模块，也可以是普通的模块，异步加载，并且能够管理模块之间的依赖。</li>
+<li>规范了模块的定义：有助于不同模块之间的共享与依赖。</li>
+</ul>
+<p>requirejs的优点：</p>
+<ul>
+<li>提高了javascript文件的加载速度，避免不必要的堵塞。</li>
+<li>独特的模块定义方式可以避免全局变量污染。</li>
+<li>独特的模块定义方式可以在脚本层面声明模块之间的依赖。</li>
+</ul>
+<h2 id="requirejs初体验"><a href="#requirejs初体验" class="headerlink" title="requirejs初体验"></a>requirejs初体验</h2><p><strong>一、引入js文件</strong> </p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="comment">&lt;!--1. 引入require.js文件--&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"require.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div></pre></td></tr></table></figure>
+<p><strong>二、定义模块</strong> </p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//在a.js文件中</span></div><div class="line"><span class="built_in">console</span>.log(<span class="string">"a模块加载了"</span>);</div></pre></td></tr></table></figure>
+<p><strong>三、引用模块</strong> </p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//require会自动找当前目录下的js文件，a是文件名，不能写后缀。</span></div><div class="line"><span class="built_in">require</span>([<span class="string">"a"</span>]);</div></pre></td></tr></table></figure>
+<h2 id="API详解"><a href="#API详解" class="headerlink" title="API详解"></a>API详解</h2><p>requirejs一共对外暴露三个全局变量 </p>
+<ol>
+<li>requirejs  - 用于加载模块</li>
+<li>require     - 用于加载模块</li>
+<li>define      - 用于定义模块</li>
+</ol>
+<p><strong><code>require</code>和<code>requirejs</code>是同一个函数，类似于<code>$</code>和<code>jQuery</code>的关系</strong> </p>
+<h3 id="require加载模块"><a href="#require加载模块" class="headerlink" title="require加载模块"></a>require加载模块</h3><ul>
+<li>作用：加载模块（amd模块或者是普通模块）</li>
+<li>加载普通模块，模块加载完是会执行一遍的。</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//第一个参数：数组，需要加载的模块，异步加载的</span></div><div class="line"><span class="comment">//第二个参数：回调函数，在模块都加载完毕之后，回调函数才会执行</span></div><div class="line"><span class="comment">//require(["js/a", "js/b", "js/c"]);</span></div><div class="line"><span class="built_in">require</span>([<span class="string">"js/a"</span>, <span class="string">"js/b"</span>, <span class="string">"js/c"</span>],<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">  <span class="built_in">console</span>.log(<span class="string">"我是最后执行的"</span>);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<h3 id="define定义模块"><a href="#define定义模块" class="headerlink" title="define定义模块"></a>define定义模块</h3><p>使用define函数可以定义一个AMD规范的模块</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//第一个参数：模块的依赖</span></div><div class="line"><span class="comment">//第二个参数：模块的主体</span></div><div class="line">define([], <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">  <span class="built_in">console</span>.log(<span class="string">"a模块加载了"</span>);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<p>好处：require独特的定义方式，避免了全局变量的污染。</p>
+<h3 id="模块之间的依赖"><a href="#模块之间的依赖" class="headerlink" title="模块之间的依赖"></a>模块之间的依赖</h3><p>在使用define定义一个模块时，如果模块依赖于另一个模块，我们可以通过define的第一个参数去指定。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//第一个参数：本模块依赖的模块列表  路径是以html的路径为基准</span></div><div class="line"><span class="comment">//第二个参数：模块的主体</span></div><div class="line">define([<span class="string">"js/a"</span>], <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">  <span class="built_in">console</span>.log(<span class="string">"a模块依赖与b模块"</span>);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<p>优点：可以在声明模块的时候就可以定义好依赖，那么使用的时候，就不用在管模块之间的依赖了。使用起来会更加的方便。</p>
+<h3 id="模块的输出（对外暴露的东西）"><a href="#模块的输出（对外暴露的东西）" class="headerlink" title="模块的输出（对外暴露的东西）"></a>模块的输出（对外暴露的东西）</h3><p>如果模块仅仅是执行一些代码实现某个功能，那么直接引入该模块，实现对应的功能即可，不需要返回值。如果该模块的存在是为了提供一些方法、对象或者其他一些内容，那么这个模块需要返回值。</p>
+<p>在定义模块的时候，我们通常需要对外返回一些内容，因为使用define定义模块，实质就是一个函数，因此可以使用<code>return</code>返回模块的输出。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">define([], <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">  <span class="keyword">var</span> util = &#123;</div><div class="line">    sayHello:<span class="function"><span class="keyword">function</span> (<span class="params">name</span>) </span>&#123;</div><div class="line">      <span class="built_in">console</span>.log(<span class="string">"大家好，我是"</span>+name);</div><div class="line">    &#125;,</div><div class="line">    sleep:<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">      <span class="built_in">console</span>.log(<span class="string">"好困啊，我想要睡觉"</span>);</div><div class="line">    &#125;</div><div class="line">  &#125;;</div><div class="line">  <span class="comment">//通过return返回模块的输出</span></div><div class="line">  <span class="keyword">return</span> util;</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<p>想要获取模块的输出，在function中传递形参即可。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//参数1：加载的模块列表</span></div><div class="line"><span class="comment">//参数2：模块加载完成后，会执行的回调函数,形参就是模块的返回值</span></div><div class="line"><span class="built_in">require</span>([<span class="string">"b"</span>], <span class="function"><span class="keyword">function</span> (<span class="params">util</span>) </span>&#123;</div><div class="line">  util.sayHello(<span class="string">"张三"</span>);</div><div class="line">  util.sleep();</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<p>如果依赖于多个模块，应该怎么办？</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//1. 如果依赖于多个模块，并且多个模块都有输出，那么我们需要使用参数一一对应，</span></div><div class="line"><span class="comment">//2. 这样就可以获取到多个模块的输出了。</span></div><div class="line"><span class="comment">//3. 即便某个模块没有输出，我们也要指定一个参数占着位置。</span></div><div class="line"><span class="comment">//4. 通常我们会把有输出的模块写在前面，没有输出的模块写在后面。这样方便写参数。</span></div><div class="line"><span class="built_in">require</span>([<span class="string">"js/util"</span>, <span class="string">"js/common"</span>, <span class="string">"js/test"</span>], <span class="function"><span class="keyword">function</span> (<span class="params">util, demo</span>) </span>&#123;</div><div class="line">  <span class="built_in">console</span>.log(util);</div><div class="line">  <span class="built_in">console</span>.log(demo);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<h3 id="配置路径和别名"><a href="#配置路径和别名" class="headerlink" title="配置路径和别名"></a>配置路径和别名</h3><ul>
+<li>使用require来加载某个模块时，路径会以当前html文件作为参考。</li>
+<li>require可以使用config来配置一些内容，比如基础路径</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">require</span>.config(&#123;</div><div class="line">  <span class="comment">//1. 配置所有模块的基础路径，该路径相对于引入了requirejs的html文件的路径。</span></div><div class="line">  <span class="comment">//2. 所有的路径都会自动的拼上baseUrl</span></div><div class="line">  baseUrl:<span class="string">"js/"</span>,</div><div class="line">  <span class="comment">//1. 给模块起别名，方便使用，在依赖的模块中也能使用</span></div><div class="line">  paths:&#123;</div><div class="line">    <span class="string">"common"</span>:<span class="string">"common/common"</span>,</div><div class="line">    <span class="string">"util"</span>:<span class="string">"util/util"</span>,</div><div class="line">    <span class="string">"test"</span>:<span class="string">"login/test"</span></div><div class="line">  &#125;</div><div class="line">&#125;);</div><div class="line"><span class="comment">//引入模块时，只需要直接引入模块的别名即可。</span></div><div class="line"><span class="built_in">require</span>([<span class="string">"common"</span>, <span class="string">"util"</span>, <span class="string">"test"</span>],<span class="function"><span class="keyword">function</span> (<span class="params">demo, util</span>) </span>&#123;</div><div class="line">  <span class="built_in">console</span>.log(demo);</div><div class="line">  <span class="built_in">console</span>.log(util);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<h3 id="加载非AMD规范的模块"><a href="#加载非AMD规范的模块" class="headerlink" title="加载非AMD规范的模块"></a>加载非AMD规范的模块</h3><p>requirejs可以通过require函数加载模块。在加载不是AMD规范的模式时，会出现问题，需要做特殊的处理。</p>
+<p>市面上有很多模块，并没有实现AMD模块化规范，没有实现模块化的模块也可以使用requirejs去加载，但是require加载时，仅仅会执行这个js文件，并不能帮助这个模块实现依赖的加载，也无法获取到这个模块的输出。</p>
+<p>我们可以通过require.config为没实现AMD规范加载依赖项。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">require</span>.config(&#123;</div><div class="line">  baseUrl:<span class="string">"js/"</span>,</div><div class="line">  path:&#123;</div><div class="line">    <span class="string">"base"</span>:<span class="string">"base"</span></div><div class="line">  &#125;,</div><div class="line">  <span class="comment">//垫：配置普通模块的依赖与输出</span></div><div class="line">  shim:&#123;</div><div class="line">    <span class="string">"base"</span>:&#123;</div><div class="line">      <span class="comment">//配置普通模块的依赖项</span></div><div class="line">      deps:[<span class="string">"依赖项1"</span>,<span class="string">"依赖项2"</span>],</div><div class="line">      <span class="comment">//配置模块的输出</span></div><div class="line">      exports: <span class="string">"输出结果"</span></div><div class="line">    &#125;</div><div class="line">  &#125;</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<h3 id="使用模块化加载jquery"><a href="#使用模块化加载jquery" class="headerlink" title="使用模块化加载jquery"></a>使用模块化加载jquery</h3><p>想使用模块化加载第三方库的时候，首先需要检查第第三方库是否支持模块化。</p>
+<img src="/2016/07/06/require-js-模块化）使用教程/jquery.png" alt="[模块化]" title="[模块化]">
+<p>如上图，说明这个第三方库是支持模块化的，可以直接使用require进行加载。</p>
+<p>具名模块与匿名模块</p>
+<p>define声明时，第一个参数可以是该模块的名字，如果声明了模块名，在配置时，模块别名就不能够调整了。</p>
+<p><a href="http://www.2cto.com/kf/201410/344627.html" target="_blank" rel="external">requireJS的匿名模块和命名模块的差别和最佳实践</a></p>
+]]></content>
+      
+        <categories>
+            
+            <category> JavaScript </category>
+            
+            <category> DOM </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> 教程 </tag>
+            
+            <tag> 学习 </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[jquery.form（form表单提交）插件的使用教程]]></title>
+      <url>/2016/05/06/jquery-form%EF%BC%88form%E8%A1%A8%E5%8D%95%E6%8F%90%E4%BA%A4%EF%BC%89%E6%8F%92%E4%BB%B6%E7%9A%84%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</url>
+      <content type="html"><![CDATA[<h1 id="jquery-form插件的使用"><a href="#jquery-form插件的使用" class="headerlink" title="jquery.form插件的使用"></a>jquery.form插件的使用</h1><p>核心方法：<code>ajaxSubmit</code></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">$(<span class="string">"form"</span>).submit(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">  <span class="comment">//异步提交代码</span></div><div class="line">  $(<span class="string">"form"</span>).ajaxSubmit(&#123;</div><div class="line">    type:<span class="string">"post"</span>,</div><div class="line">    url:<span class="string">"01-php.php"</span>,</div><div class="line">    data:&#123;</div><div class="line">      id:<span class="string">"11111"</span></div><div class="line">    &#125;,</div><div class="line">    success:<span class="function"><span class="keyword">function</span> (<span class="params">info</span>) </span>&#123;</div><div class="line">      <span class="built_in">console</span>.log(info);</div><div class="line">    &#125;,</div><div class="line">    error:<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">      <span class="built_in">console</span>.log(<span class="string">"服务器错误"</span>);</div><div class="line">    &#125;</div><div class="line">  &#125;);</div><div class="line">  <span class="keyword">return</span> <span class="literal">false</span>;</div><div class="line">&#125;);</div></pre></td></tr></table></figure>]]></content>
+      
+        <categories>
+            
+            <category> JQuery </category>
+            
+            <category> form </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> 教程 </tag>
+            
+            <tag> 学习 </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[jquery.cookie（操作cookie）插件使用教程]]></title>
+      <url>/2016/04/06/jquery-cookie%EF%BC%88%E6%93%8D%E4%BD%9Ccookie%EF%BC%89%E6%8F%92%E4%BB%B6%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</url>
+      <content type="html"><![CDATA[<h1 id="jquery操作cookie"><a href="#jquery操作cookie" class="headerlink" title="jquery操作cookie"></a>jquery操作cookie</h1><p>jquery.cookie.js插件是一个专门用于操作cookie的一个插件，使用起来非常的方便和简单。</p>
+<p><a href="https://plugins.jquery.com/cookie/" target="_blank" rel="external">官方网站</a></p>
+<p><a href="https://plugins.jquery.com/cookie/" target="_blank" rel="external">github地址</a></p>
+<ul>
+<li>设置cookie</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//设置一个会话级别的cookie，浏览器关闭就消失</span></div><div class="line">$.cookie(<span class="string">'name'</span>, <span class="string">'value'</span>);</div><div class="line"></div><div class="line"><span class="comment">//设置一个7天有效期的cookie</span></div><div class="line"><span class="comment">//expires也可以指定一个具体的过期时间</span></div><div class="line">$.cookie(<span class="string">'name'</span>, <span class="string">'value'</span>, &#123; <span class="attr">expires</span>: <span class="number">7</span> &#125;);</div><div class="line"></div><div class="line"><span class="comment">//设置cookie的有效期和路径</span></div><div class="line">$.cookie(<span class="string">'name'</span>, <span class="string">'value'</span>, &#123; <span class="attr">expires</span>: <span class="number">7</span>, <span class="attr">path</span>: <span class="string">'/'</span> &#125;);</div></pre></td></tr></table></figure>
+<ul>
+<li>获取cookie</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//如果存在，返回对应的值</span></div><div class="line">$.cookie(<span class="string">'name'</span>); <span class="comment">// =&gt; "value"</span></div><div class="line"><span class="comment">//如果不存在，返回undefined</span></div><div class="line">$.cookie(<span class="string">'nothing'</span>); <span class="comment">// =&gt; undefined</span></div><div class="line"></div><div class="line"><span class="comment">//获取所有的额cookie</span></div><div class="line">$.cookie(); <span class="comment">// =&gt; &#123; "name": "value" &#125;</span></div></pre></td></tr></table></figure>
+<ul>
+<li>移除cookie</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 移除cookie，如果成功，返回true，否则false</span></div><div class="line">$.removeCookie(<span class="string">'name'</span>); <span class="comment">// =&gt; true</span></div><div class="line">$.removeCookie(<span class="string">'nothing'</span>); <span class="comment">// =&gt; false</span></div><div class="line"></div><div class="line"><span class="comment">// 如果路径不同时，需要指定路径</span></div><div class="line">$.cookie(<span class="string">'name'</span>, <span class="string">'value'</span>, &#123; <span class="attr">path</span>: <span class="string">'/'</span> &#125;);</div><div class="line"><span class="comment">// 移除失败</span></div><div class="line">$.removeCookie(<span class="string">'name'</span>); <span class="comment">// =&gt; false</span></div><div class="line"><span class="comment">// 移除成功</span></div><div class="line">$.removeCookie(<span class="string">'name'</span>, &#123; <span class="attr">path</span>: <span class="string">'/'</span> &#125;); <span class="comment">// =&gt; true</span></div></pre></td></tr></table></figure>
+]]></content>
+      
+        <categories>
+            
+            <category> JQuery </category>
+            
+            <category> cookie </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> 教程 </tag>
+            
+            <tag> 学习 </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[jquery.region省市区三级联动插件的使用教程]]></title>
+      <url>/2016/03/20/jquery-region%E6%8F%92%E4%BB%B6%E7%9A%84%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</url>
+      <content type="html"><![CDATA[<h1 id="jquery-region插件"><a href="#jquery-region插件" class="headerlink" title="jquery.region插件"></a>jquery.region插件</h1><blockquote>
+<p>jquery.region是一个省市区三级联动的jquery插件</p>
+</blockquote>
+<ul>
+<li>html结构</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"demo"</span>&gt;</span></div><div class="line">  <span class="comment">&lt;!-- id必须指定，不然没有效果 --&gt;</span></div><div class="line">  <span class="comment">&lt;!-- data-id:可以不指定，如果指定了，那么页面加载时就会显示对应的省份 --&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">select</span> <span class="attr">id</span>=<span class="string">"province"</span> <span class="attr">data-id</span>=<span class="string">"360000"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">""</span>&gt;</span>请选择<span class="tag">&lt;/<span class="name">option</span>&gt;</span></div><div class="line">  <span class="tag">&lt;/<span class="name">select</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">select</span> <span class="attr">id</span>=<span class="string">"city"</span> <span class="attr">data-id</span>=<span class="string">"360700"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">""</span>&gt;</span>请选择<span class="tag">&lt;/<span class="name">option</span>&gt;</span></div><div class="line">  <span class="tag">&lt;/<span class="name">select</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">select</span> <span class="attr">id</span>=<span class="string">"town"</span> <span class="attr">data-id</span>=<span class="string">"360730"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">""</span>&gt;</span>请选择<span class="tag">&lt;/<span class="name">option</span>&gt;</span></div><div class="line">  <span class="tag">&lt;/<span class="name">select</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
+<ul>
+<li>引入js文件</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"jquery-1.12.4.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"jquery-region/jquery.region.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div></pre></td></tr></table></figure>
+<ul>
+<li>使用jquery插件</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$(<span class="string">".demo"</span>).region(&#123;</div><div class="line">  url:<span class="string">"jquery-region/region.json"</span></div><div class="line">&#125;);</div></pre></td></tr></table></figure>]]></content>
+      
+        <categories>
+            
+            <category> JQuery </category>
+            
+            <category> region </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> 学习 </tag>
+            
+            <tag> 随笔 </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[Uploadify文件上传插件使用教程]]></title>
       <url>/2016/03/06/uploadify%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E6%8F%92%E4%BB%B6%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</url>
       <content type="html"><![CDATA[<h1 id="uploadify插件"><a href="#uploadify插件" class="headerlink" title="uploadify插件"></a>uploadify插件</h1><blockquote>
@@ -48,12 +340,15 @@
 <ul>
 <li>常用参数解释</li>
 </ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">buttonCursor： 默认<span class="string">'hand'</span>  , 指定光标形状， <span class="string">'hand'</span>或者<span class="string">'arrow'</span></div><div class="line">buttonText： 指定按钮的文本内容</div><div class="line">fileObjName： 指定上传的这个表单框的name属性，后端才能获取到。</div><div class="line">fileSizeLimit： 指定文件大小限制</div><div class="line">fileTypeExts：指定上传文件的后缀名。</div></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">buttonClass； 指定给上传按钮添加的类名</div><div class="line">buttonCursor： 默认<span class="string">'hand'</span>  , 指定光标形状， <span class="string">'hand'</span>或者<span class="string">'arrow'</span></div><div class="line">buttonText： 指定按钮的文本内容</div><div class="line">fileObjName： 指定上传的这个表单框的name属性，后端才能获取到。</div><div class="line">fileSizeLimit： 指定文件大小限制</div><div class="line">fileTypeExts：指定上传文件的后缀名。</div><div class="line">itemTemplate: 指定上传时的html结构</div><div class="line">formData: 指定文件上传时的form表单参数</div></pre></td></tr></table></figure>
 <p>更多参数，参考<a href="http://www.uploadify.com/documentation/" target="_blank" rel="external">官方文档</a></p>
 <ul>
 <li>常用事件</li>
 </ul>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">onUploadSuccess: 上传成功时触发</div><div class="line">onUploadError： 上传失败时触发。</div></pre></td></tr></table></figure>
+<ul>
+<li>代码示例<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line">$(<span class="string">"#upfile"</span>).uploadify(&#123;</div><div class="line">    auto: <span class="literal">true</span>,</div><div class="line">    width: <span class="number">70</span>,</div><div class="line">    height: <span class="number">30</span>,</div><div class="line">    buttonClass:<span class="string">"btn btn-success btn-sm button_upfile"</span>,</div><div class="line">    buttonText: <span class="string">"选择图片"</span>,</div><div class="line">    fileTypeExts: <span class="string">'*.gif; *.jpg; *.png'</span>,</div><div class="line">    swf: <span class="string">'/public/assets/uploadify/uploadify.swf'</span>,</div><div class="line">    uploader: <span class="string">'/api/uploader/cover'</span>,</div><div class="line">    fileObjName: <span class="string">"cs_cover_original"</span>,</div><div class="line">    itemTemplate:<span class="string">"&lt;span&gt;&lt;/span&gt;"</span>,</div><div class="line">    formData:&#123;</div><div class="line">       cs_id:cs_id</div><div class="line">    &#125;,</div><div class="line">    onUploadSuccess: <span class="function"><span class="keyword">function</span> (<span class="params">file, data</span>) </span>&#123;</div><div class="line">       data = <span class="built_in">JSON</span>.parse(data);     </div><div class="line">       <span class="comment">//设置图片</span></div><div class="line">       $(<span class="string">".preview img"</span>).attr(<span class="string">"src"</span>, data.result.path);</div><div class="line">    &#125;</div><div class="line">&#125;);</div></pre></td></tr></table></figure></li>
+</ul>
 ]]></content>
       
         <categories>

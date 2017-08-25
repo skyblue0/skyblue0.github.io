@@ -6,18 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Category: JavaScript | ZZJ 博客</title>
+  <title>jquery.form（form表单提交）插件的使用教程 | ZZJ 博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Javascript,html,CSS,CSS3,教程,Hexo,博客,blog">
-<meta property="og:type" content="website">
-<meta property="og:title" content="ZZJ 博客">
-<meta property="og:url" content="http://yoursite.com/categories/JavaScript/index.html">
+  <meta name="description" content="jquery.form插件的使用核心方法：ajaxSubmit 1234567891011121314151617$(&quot;form&quot;).submit(function () &amp;#123;  //异步提交代码  $(&quot;form&quot;).ajaxSubmit(&amp;#123;    type:&quot;post&quot;,    url:&quot;01-php.php&quot;,    data:&amp;#123;      id:&quot;11111&quot;">
+<meta name="keywords" content="教程,学习">
+<meta property="og:type" content="article">
+<meta property="og:title" content="jquery.form（form表单提交）插件的使用教程">
+<meta property="og:url" content="http://yoursite.com/2016/05/06/jquery-form（form表单提交）插件的使用教程/index.html">
 <meta property="og:site_name" content="ZZJ 博客">
-<meta property="og:description" content="Javascript,html,CSS,CSS3,教程,Hexo,博客,blog">
+<meta property="og:description" content="jquery.form插件的使用核心方法：ajaxSubmit 1234567891011121314151617$(&quot;form&quot;).submit(function () &amp;#123;  //异步提交代码  $(&quot;form&quot;).ajaxSubmit(&amp;#123;    type:&quot;post&quot;,    url:&quot;01-php.php&quot;,    data:&amp;#123;      id:&quot;11111&quot;">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2017-08-25T11:40:02.279Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="ZZJ 博客">
-<meta name="twitter:description" content="Javascript,html,CSS,CSS3,教程,Hexo,博客,blog">
+<meta name="twitter:title" content="jquery.form（form表单提交）插件的使用教程">
+<meta name="twitter:description" content="jquery.form插件的使用核心方法：ajaxSubmit 1234567891011121314151617$(&quot;form&quot;).submit(function () &amp;#123;  //异步提交代码  $(&quot;form&quot;).ajaxSubmit(&amp;#123;    type:&quot;post&quot;,    url:&quot;01-php.php&quot;,    data:&amp;#123;      id:&quot;11111&quot;">
   
     <link rel="alternative" href="/atom.xml" title="ZZJ 博客" type="application/atom+xml">
   
@@ -173,36 +175,56 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-jquery-form（form表单提交）插件的使用教程" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2016" class="archive-year">2016</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2016/10/16/echarts（图表）插件的使用/" class="archive-article-date">
-  	<time datetime="2016-10-16T01:20:06.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-10-16</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/10/16/echarts（图表）插件的使用/">Echarts（图表）插件的使用</a>
+    <h1 class="article-title" itemprop="name">
+      jquery.form（form表单提交）插件的使用教程
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2016/05/06/jquery-form（form表单提交）插件的使用教程/" class="archive-article-date">
+  	<time datetime="2016-05-06T08:26:06.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-05-06</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="jquery-form插件的使用"><a href="#jquery-form插件的使用" class="headerlink" title="jquery.form插件的使用"></a>jquery.form插件的使用</h1><p>核心方法：<code>ajaxSubmit</code></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">$(<span class="string">"form"</span>).submit(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">  <span class="comment">//异步提交代码</span></div><div class="line">  $(<span class="string">"form"</span>).ajaxSubmit(&#123;</div><div class="line">    type:<span class="string">"post"</span>,</div><div class="line">    url:<span class="string">"01-php.php"</span>,</div><div class="line">    data:&#123;</div><div class="line">      id:<span class="string">"11111"</span></div><div class="line">    &#125;,</div><div class="line">    success:<span class="function"><span class="keyword">function</span> (<span class="params">info</span>) </span>&#123;</div><div class="line">      <span class="built_in">console</span>.log(info);</div><div class="line">    &#125;,</div><div class="line">    error:<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">      <span class="built_in">console</span>.log(<span class="string">"服务器错误"</span>);</div><div class="line">    &#125;</div><div class="line">  &#125;);</div><div class="line">  <span class="keyword">return</span> <span class="literal">false</span>;</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -218,158 +240,141 @@
 		</ul>
 	</div>
 
-          
+      
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/JavaScript/" class="article-tag-list-link color1">JavaScript</a>
+        			<a href="/categories/JQuery/" class="article-tag-list-link color2">JQuery</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="/categories/echarts/" class="article-tag-list-link color3">echarts</a>
+        			<a href="/categories/form/" class="article-tag-list-link color5">form</a>
         		</li>
       		
 		</ul>
 	</div>
 
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2016/05/06/jquery-form（form表单提交）插件的使用教程/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2016/07/06/require-js-模块化）使用教程/" class="archive-article-date">
-  	<time datetime="2016-07-06T02:36:26.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-07-06</time>
-</a>
+<nav id="article-nav">
+  
+    <a href="/2016/07/06/require-js-模块化）使用教程/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          require.js(模块化）使用教程
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2016/04/06/jquery-cookie（操作cookie）插件使用教程/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">jquery.cookie（操作cookie）插件使用教程</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/07/06/require-js-模块化）使用教程/">require.js(模块化）使用教程</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">教程</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">学习</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/JavaScript/" class="article-tag-list-link color1">JavaScript</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/DOM/" class="article-tag-list-link color4">DOM</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#jquery-form插件的使用"><span class="toc-number">1.</span> <span class="toc-text">jquery.form插件的使用</span></a></li></ol>
+                    </div>
+                </span>
+            </div>
         </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-      
-        </div></section>
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2015" class="archive-year">2015</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2015/07/06/test/" class="archive-article-date">
-  	<time datetime="2015-07-06T07:27:06.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2015-07-06</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2015/07/06/test/">Test</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">学习</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/JavaScript/" class="article-tag-list-link color1">JavaScript</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/DOM/" class="article-tag-list-link color4">DOM</a>
-        		</li>
-      		
-		</ul>
-	</div>
+        
+    </div>
+</aside>
 
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+
   
   
-    </div></section>
   
 
-    
+  
+
+  
 
 
           </div>
@@ -392,10 +397,10 @@
 	var yiliaConfig = {
 		mathjax: true,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
-		isCategory: true,
+		isCategory: false,
 		open_in_new: true,
 		toc_hide_index: true,
 		root: "/",

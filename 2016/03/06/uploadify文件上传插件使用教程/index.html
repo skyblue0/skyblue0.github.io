@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="ZZJ 博客">
 <meta property="og:description" content="uploadify插件 Uploadify是jQuery的一个文件上传插件，带有上传进度条。（easy to implement, highly customizable） 官网 官方文档  使用步骤 html结构  1&amp;lt;input type=&quot;file&quot; id=&quot;file_upload_1&quot;&amp;gt;  引入文件  123456&amp;lt;!--如果想要样式，那就需要引入, 非必须--&amp;gt;&amp;">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2017-08-25T10:09:39.562Z">
+<meta property="og:updated_time" content="2017-08-25T12:19:07.668Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Uploadify文件上传插件使用教程">
 <meta name="twitter:description" content="uploadify插件 Uploadify是jQuery的一个文件上传插件，带有上传进度条。（easy to implement, highly customizable） 官网 官方文档  使用步骤 html结构  1&amp;lt;input type=&quot;file&quot; id=&quot;file_upload_1&quot;&amp;gt;  引入文件  123456&amp;lt;!--如果想要样式，那就需要引入, 非必须--&amp;gt;&amp;">
@@ -215,12 +215,15 @@
 <ul>
 <li>常用参数解释</li>
 </ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">buttonCursor： 默认<span class="string">'hand'</span>  , 指定光标形状， <span class="string">'hand'</span>或者<span class="string">'arrow'</span></div><div class="line">buttonText： 指定按钮的文本内容</div><div class="line">fileObjName： 指定上传的这个表单框的name属性，后端才能获取到。</div><div class="line">fileSizeLimit： 指定文件大小限制</div><div class="line">fileTypeExts：指定上传文件的后缀名。</div></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">buttonClass； 指定给上传按钮添加的类名</div><div class="line">buttonCursor： 默认<span class="string">'hand'</span>  , 指定光标形状， <span class="string">'hand'</span>或者<span class="string">'arrow'</span></div><div class="line">buttonText： 指定按钮的文本内容</div><div class="line">fileObjName： 指定上传的这个表单框的name属性，后端才能获取到。</div><div class="line">fileSizeLimit： 指定文件大小限制</div><div class="line">fileTypeExts：指定上传文件的后缀名。</div><div class="line">itemTemplate: 指定上传时的html结构</div><div class="line">formData: 指定文件上传时的form表单参数</div></pre></td></tr></table></figure>
 <p>更多参数，参考<a href="http://www.uploadify.com/documentation/" target="_blank" rel="external">官方文档</a></p>
 <ul>
 <li>常用事件</li>
 </ul>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">onUploadSuccess: 上传成功时触发</div><div class="line">onUploadError： 上传失败时触发。</div></pre></td></tr></table></figure>
+<ul>
+<li>代码示例<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line">$(<span class="string">"#upfile"</span>).uploadify(&#123;</div><div class="line">    auto: <span class="literal">true</span>,</div><div class="line">    width: <span class="number">70</span>,</div><div class="line">    height: <span class="number">30</span>,</div><div class="line">    buttonClass:<span class="string">"btn btn-success btn-sm button_upfile"</span>,</div><div class="line">    buttonText: <span class="string">"选择图片"</span>,</div><div class="line">    fileTypeExts: <span class="string">'*.gif; *.jpg; *.png'</span>,</div><div class="line">    swf: <span class="string">'/public/assets/uploadify/uploadify.swf'</span>,</div><div class="line">    uploader: <span class="string">'/api/uploader/cover'</span>,</div><div class="line">    fileObjName: <span class="string">"cs_cover_original"</span>,</div><div class="line">    itemTemplate:<span class="string">"&lt;span&gt;&lt;/span&gt;"</span>,</div><div class="line">    formData:&#123;</div><div class="line">       cs_id:cs_id</div><div class="line">    &#125;,</div><div class="line">    onUploadSuccess: <span class="function"><span class="keyword">function</span> (<span class="params">file, data</span>) </span>&#123;</div><div class="line">       data = <span class="built_in">JSON</span>.parse(data);     </div><div class="line">       <span class="comment">//设置图片</span></div><div class="line">       $(<span class="string">".preview img"</span>).attr(<span class="string">"src"</span>, data.result.path);</div><div class="line">    &#125;</div><div class="line">&#125;);</div></pre></td></tr></table></figure></li>
+</ul>
 
       
 
@@ -344,11 +347,11 @@
   
 <nav id="article-nav">
   
-    <a href="/2017/08/05/404.html/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2016/03/20/jquery-region插件的使用教程/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          (no title)
+          jquery.region省市区三级联动插件的使用教程
         
       </div>
     </a>

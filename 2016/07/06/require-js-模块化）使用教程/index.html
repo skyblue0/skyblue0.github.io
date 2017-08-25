@@ -6,18 +6,22 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Category: JavaScript | ZZJ 博客</title>
+  <title>require.js(模块化）使用教程 | ZZJ 博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Javascript,html,CSS,CSS3,教程,Hexo,博客,blog">
-<meta property="og:type" content="website">
-<meta property="og:title" content="ZZJ 博客">
-<meta property="og:url" content="http://yoursite.com/categories/JavaScript/index.html">
+  <meta name="description" content="模块化的标准有了模块，我们就可以更方便地使用别人的代码,想要什么功能，就加载什么模块。这样做有一个前提，那就是大家必须以同样的方式编写模块，否则你有你的写法，我有我的写法，岂不是乱了套！ 【螺丝与螺帽】  CommonJS：是一个模块化的标准，Node.js在使用的模块化标准。适用与后端开发的标准。 AMD（Async Module Definition）：在CommonJS基础上衍生出来的适用于">
+<meta name="keywords" content="教程,学习">
+<meta property="og:type" content="article">
+<meta property="og:title" content="require.js(模块化）使用教程">
+<meta property="og:url" content="http://yoursite.com/2016/07/06/require-js-模块化）使用教程/index.html">
 <meta property="og:site_name" content="ZZJ 博客">
-<meta property="og:description" content="Javascript,html,CSS,CSS3,教程,Hexo,博客,blog">
+<meta property="og:description" content="模块化的标准有了模块，我们就可以更方便地使用别人的代码,想要什么功能，就加载什么模块。这样做有一个前提，那就是大家必须以同样的方式编写模块，否则你有你的写法，我有我的写法，岂不是乱了套！ 【螺丝与螺帽】  CommonJS：是一个模块化的标准，Node.js在使用的模块化标准。适用与后端开发的标准。 AMD（Async Module Definition）：在CommonJS基础上衍生出来的适用于">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http://yoursite.com/2016/07/06/require-js-模块化）使用教程/jquery.png">
+<meta property="og:updated_time" content="2017-08-25T11:32:33.879Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="ZZJ 博客">
-<meta name="twitter:description" content="Javascript,html,CSS,CSS3,教程,Hexo,博客,blog">
+<meta name="twitter:title" content="require.js(模块化）使用教程">
+<meta name="twitter:description" content="模块化的标准有了模块，我们就可以更方便地使用别人的代码,想要什么功能，就加载什么模块。这样做有一个前提，那就是大家必须以同样的方式编写模块，否则你有你的写法，我有我的写法，岂不是乱了套！ 【螺丝与螺帽】  CommonJS：是一个模块化的标准，Node.js在使用的模块化标准。适用与后端开发的标准。 AMD（Async Module Definition）：在CommonJS基础上衍生出来的适用于">
+<meta name="twitter:image" content="http://yoursite.com/2016/07/06/require-js-模块化）使用教程/jquery.png">
   
     <link rel="alternative" href="/atom.xml" title="ZZJ 博客" type="application/atom+xml">
   
@@ -173,93 +177,133 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-require-js-模块化）使用教程" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2016" class="archive-year">2016</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2016/10/16/echarts（图表）插件的使用/" class="archive-article-date">
-  	<time datetime="2016-10-16T01:20:06.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-10-16</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/10/16/echarts（图表）插件的使用/">Echarts（图表）插件的使用</a>
+    <h1 class="article-title" itemprop="name">
+      require.js(模块化）使用教程
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">教程</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">学习</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/JavaScript/" class="article-tag-list-link color1">JavaScript</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/echarts/" class="article-tag-list-link color3">echarts</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2016/07/06/require-js-模块化）使用教程/" class="archive-article-date">
+        
+        <a href="/2016/07/06/require-js-模块化）使用教程/" class="archive-article-date">
   	<time datetime="2016-07-06T02:36:26.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-07-06</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/07/06/require-js-模块化）使用教程/">require.js(模块化）使用教程</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="模块化的标准"><a href="#模块化的标准" class="headerlink" title="模块化的标准"></a>模块化的标准</h1><p>有了模块，我们就可以更方便地使用别人的代码,想要什么功能，就加载什么模块。这样做有一个前提，那就是大家必须以同样的方式编写模块，否则你有你的写法，我有我的写法，岂不是乱了套！ 【螺丝与螺帽】</p>
+<ul>
+<li>CommonJS：是一个模块化的标准，Node.js在使用的模块化标准。适用与后端开发的标准。</li>
+<li>AMD（Async Module Definition）：在CommonJS基础上衍生出来的适用于前端开发的模块化标准。<ul>
+<li>特点：预加载，第一次访问时，将所有的文件都加载出来。</li>
+<li>优点：第一次访问完成以后，再次访问速度会很快</li>
+<li>缺点：第一次加载，需要的时间会比较长</li>
+<li>代表：requirejs</li>
+</ul>
+</li>
+<li>CMD（Common Module Definition）：在CommonJS基础上衍生出来的适用于前端开发的模块化标准。<ul>
+<li>特点：懒加载，只有使用到的时候，才会加载对应的模块。</li>
+<li>优点：第一次访问速度会比较快</li>
+<li>缺点：再次访问其他模块时会比较慢。</li>
+<li>代表：seajs  </li>
+</ul>
+</li>
+</ul>
+<h1 id="require-JS"><a href="#require-JS" class="headerlink" title="require.JS"></a>require.JS</h1><h2 id="require-js概念"><a href="#require-js概念" class="headerlink" title="require.js概念"></a>require.js概念</h2><p>requirejs是AMD规范的一个实现，require.js是一个javascript文件，也是一个模块加载器。<strong>模块加载器：相当于canvas中封装的图片加载器，只不过一个是加载图片的，一个加载js，文件的类型不一样。</strong> </p>
+<p><a href="http://requirejs.org/" target="_blank" rel="external">官网地址</a></p>
+<p><a href="https://github.com/requirejs/requirejs" target="_blank" rel="external">github地址</a></p>
+<p>requirejs主要提供两大功能：</p>
+<ul>
+<li>加载模块：可以加载AMD规范的模块，也可以是普通的模块，异步加载，并且能够管理模块之间的依赖。</li>
+<li>规范了模块的定义：有助于不同模块之间的共享与依赖。</li>
+</ul>
+<p>requirejs的优点：</p>
+<ul>
+<li>提高了javascript文件的加载速度，避免不必要的堵塞。</li>
+<li>独特的模块定义方式可以避免全局变量污染。</li>
+<li>独特的模块定义方式可以在脚本层面声明模块之间的依赖。</li>
+</ul>
+<h2 id="requirejs初体验"><a href="#requirejs初体验" class="headerlink" title="requirejs初体验"></a>requirejs初体验</h2><p><strong>一、引入js文件</strong> </p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="comment">&lt;!--1. 引入require.js文件--&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"require.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div></pre></td></tr></table></figure>
+<p><strong>二、定义模块</strong> </p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//在a.js文件中</span></div><div class="line"><span class="built_in">console</span>.log(<span class="string">"a模块加载了"</span>);</div></pre></td></tr></table></figure>
+<p><strong>三、引用模块</strong> </p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//require会自动找当前目录下的js文件，a是文件名，不能写后缀。</span></div><div class="line"><span class="built_in">require</span>([<span class="string">"a"</span>]);</div></pre></td></tr></table></figure>
+<h2 id="API详解"><a href="#API详解" class="headerlink" title="API详解"></a>API详解</h2><p>requirejs一共对外暴露三个全局变量 </p>
+<ol>
+<li>requirejs  - 用于加载模块</li>
+<li>require     - 用于加载模块</li>
+<li>define      - 用于定义模块</li>
+</ol>
+<p><strong><code>require</code>和<code>requirejs</code>是同一个函数，类似于<code>$</code>和<code>jQuery</code>的关系</strong> </p>
+<h3 id="require加载模块"><a href="#require加载模块" class="headerlink" title="require加载模块"></a>require加载模块</h3><ul>
+<li>作用：加载模块（amd模块或者是普通模块）</li>
+<li>加载普通模块，模块加载完是会执行一遍的。</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//第一个参数：数组，需要加载的模块，异步加载的</span></div><div class="line"><span class="comment">//第二个参数：回调函数，在模块都加载完毕之后，回调函数才会执行</span></div><div class="line"><span class="comment">//require(["js/a", "js/b", "js/c"]);</span></div><div class="line"><span class="built_in">require</span>([<span class="string">"js/a"</span>, <span class="string">"js/b"</span>, <span class="string">"js/c"</span>],<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">  <span class="built_in">console</span>.log(<span class="string">"我是最后执行的"</span>);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<h3 id="define定义模块"><a href="#define定义模块" class="headerlink" title="define定义模块"></a>define定义模块</h3><p>使用define函数可以定义一个AMD规范的模块</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//第一个参数：模块的依赖</span></div><div class="line"><span class="comment">//第二个参数：模块的主体</span></div><div class="line">define([], <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">  <span class="built_in">console</span>.log(<span class="string">"a模块加载了"</span>);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<p>好处：require独特的定义方式，避免了全局变量的污染。</p>
+<h3 id="模块之间的依赖"><a href="#模块之间的依赖" class="headerlink" title="模块之间的依赖"></a>模块之间的依赖</h3><p>在使用define定义一个模块时，如果模块依赖于另一个模块，我们可以通过define的第一个参数去指定。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//第一个参数：本模块依赖的模块列表  路径是以html的路径为基准</span></div><div class="line"><span class="comment">//第二个参数：模块的主体</span></div><div class="line">define([<span class="string">"js/a"</span>], <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">  <span class="built_in">console</span>.log(<span class="string">"a模块依赖与b模块"</span>);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<p>优点：可以在声明模块的时候就可以定义好依赖，那么使用的时候，就不用在管模块之间的依赖了。使用起来会更加的方便。</p>
+<h3 id="模块的输出（对外暴露的东西）"><a href="#模块的输出（对外暴露的东西）" class="headerlink" title="模块的输出（对外暴露的东西）"></a>模块的输出（对外暴露的东西）</h3><p>如果模块仅仅是执行一些代码实现某个功能，那么直接引入该模块，实现对应的功能即可，不需要返回值。如果该模块的存在是为了提供一些方法、对象或者其他一些内容，那么这个模块需要返回值。</p>
+<p>在定义模块的时候，我们通常需要对外返回一些内容，因为使用define定义模块，实质就是一个函数，因此可以使用<code>return</code>返回模块的输出。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">define([], <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">  <span class="keyword">var</span> util = &#123;</div><div class="line">    sayHello:<span class="function"><span class="keyword">function</span> (<span class="params">name</span>) </span>&#123;</div><div class="line">      <span class="built_in">console</span>.log(<span class="string">"大家好，我是"</span>+name);</div><div class="line">    &#125;,</div><div class="line">    sleep:<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">      <span class="built_in">console</span>.log(<span class="string">"好困啊，我想要睡觉"</span>);</div><div class="line">    &#125;</div><div class="line">  &#125;;</div><div class="line">  <span class="comment">//通过return返回模块的输出</span></div><div class="line">  <span class="keyword">return</span> util;</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<p>想要获取模块的输出，在function中传递形参即可。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//参数1：加载的模块列表</span></div><div class="line"><span class="comment">//参数2：模块加载完成后，会执行的回调函数,形参就是模块的返回值</span></div><div class="line"><span class="built_in">require</span>([<span class="string">"b"</span>], <span class="function"><span class="keyword">function</span> (<span class="params">util</span>) </span>&#123;</div><div class="line">  util.sayHello(<span class="string">"张三"</span>);</div><div class="line">  util.sleep();</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<p>如果依赖于多个模块，应该怎么办？</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//1. 如果依赖于多个模块，并且多个模块都有输出，那么我们需要使用参数一一对应，</span></div><div class="line"><span class="comment">//2. 这样就可以获取到多个模块的输出了。</span></div><div class="line"><span class="comment">//3. 即便某个模块没有输出，我们也要指定一个参数占着位置。</span></div><div class="line"><span class="comment">//4. 通常我们会把有输出的模块写在前面，没有输出的模块写在后面。这样方便写参数。</span></div><div class="line"><span class="built_in">require</span>([<span class="string">"js/util"</span>, <span class="string">"js/common"</span>, <span class="string">"js/test"</span>], <span class="function"><span class="keyword">function</span> (<span class="params">util, demo</span>) </span>&#123;</div><div class="line">  <span class="built_in">console</span>.log(util);</div><div class="line">  <span class="built_in">console</span>.log(demo);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<h3 id="配置路径和别名"><a href="#配置路径和别名" class="headerlink" title="配置路径和别名"></a>配置路径和别名</h3><ul>
+<li>使用require来加载某个模块时，路径会以当前html文件作为参考。</li>
+<li>require可以使用config来配置一些内容，比如基础路径</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">require</span>.config(&#123;</div><div class="line">  <span class="comment">//1. 配置所有模块的基础路径，该路径相对于引入了requirejs的html文件的路径。</span></div><div class="line">  <span class="comment">//2. 所有的路径都会自动的拼上baseUrl</span></div><div class="line">  baseUrl:<span class="string">"js/"</span>,</div><div class="line">  <span class="comment">//1. 给模块起别名，方便使用，在依赖的模块中也能使用</span></div><div class="line">  paths:&#123;</div><div class="line">    <span class="string">"common"</span>:<span class="string">"common/common"</span>,</div><div class="line">    <span class="string">"util"</span>:<span class="string">"util/util"</span>,</div><div class="line">    <span class="string">"test"</span>:<span class="string">"login/test"</span></div><div class="line">  &#125;</div><div class="line">&#125;);</div><div class="line"><span class="comment">//引入模块时，只需要直接引入模块的别名即可。</span></div><div class="line"><span class="built_in">require</span>([<span class="string">"common"</span>, <span class="string">"util"</span>, <span class="string">"test"</span>],<span class="function"><span class="keyword">function</span> (<span class="params">demo, util</span>) </span>&#123;</div><div class="line">  <span class="built_in">console</span>.log(demo);</div><div class="line">  <span class="built_in">console</span>.log(util);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<h3 id="加载非AMD规范的模块"><a href="#加载非AMD规范的模块" class="headerlink" title="加载非AMD规范的模块"></a>加载非AMD规范的模块</h3><p>requirejs可以通过require函数加载模块。在加载不是AMD规范的模式时，会出现问题，需要做特殊的处理。</p>
+<p>市面上有很多模块，并没有实现AMD模块化规范，没有实现模块化的模块也可以使用requirejs去加载，但是require加载时，仅仅会执行这个js文件，并不能帮助这个模块实现依赖的加载，也无法获取到这个模块的输出。</p>
+<p>我们可以通过require.config为没实现AMD规范加载依赖项。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">require</span>.config(&#123;</div><div class="line">  baseUrl:<span class="string">"js/"</span>,</div><div class="line">  path:&#123;</div><div class="line">    <span class="string">"base"</span>:<span class="string">"base"</span></div><div class="line">  &#125;,</div><div class="line">  <span class="comment">//垫：配置普通模块的依赖与输出</span></div><div class="line">  shim:&#123;</div><div class="line">    <span class="string">"base"</span>:&#123;</div><div class="line">      <span class="comment">//配置普通模块的依赖项</span></div><div class="line">      deps:[<span class="string">"依赖项1"</span>,<span class="string">"依赖项2"</span>],</div><div class="line">      <span class="comment">//配置模块的输出</span></div><div class="line">      exports: <span class="string">"输出结果"</span></div><div class="line">    &#125;</div><div class="line">  &#125;</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<h3 id="使用模块化加载jquery"><a href="#使用模块化加载jquery" class="headerlink" title="使用模块化加载jquery"></a>使用模块化加载jquery</h3><p>想使用模块化加载第三方库的时候，首先需要检查第第三方库是否支持模块化。</p>
+<img src="/2016/07/06/require-js-模块化）使用教程/jquery.png" alt="[模块化]" title="[模块化]">
+<p>如上图，说明这个第三方库是支持模块化的，可以直接使用require进行加载。</p>
+<p>具名模块与匿名模块</p>
+<p>define声明时，第一个参数可以是该模块的名字，如果声明了模块名，在配置时，模块别名就不能够调整了。</p>
+<p><a href="http://www.2cto.com/kf/201410/344627.html" target="_blank" rel="external">requireJS的匿名模块和命名模块的差别和最佳实践</a></p>
 
-        <div class="article-info info-on-right">
-          
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -275,7 +319,7 @@
 		</ul>
 	</div>
 
-          
+      
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
@@ -292,84 +336,124 @@
 	</div>
 
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2016/07/06/require-js-模块化）使用教程/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-      
-        </div></section>
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2015" class="archive-year">2015</a>
+<nav id="article-nav">
+  
+    <a href="/2016/08/06/ckeditor（富文本编辑）插件的使用教程/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          Ckeditor（富文本编辑）插件的使用教程
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2016/05/06/jquery-form（form表单提交）插件的使用教程/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">jquery.form（form表单提交）插件的使用教程</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2015/07/06/test/" class="archive-article-date">
-  	<time datetime="2015-07-06T07:27:06.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2015-07-06</time>
-</a>
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#模块化的标准"><span class="toc-number">1.</span> <span class="toc-text">模块化的标准</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#require-JS"><span class="toc-number">2.</span> <span class="toc-text">require.JS</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#require-js概念"><span class="toc-number">2.1.</span> <span class="toc-text">require.js概念</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#requirejs初体验"><span class="toc-number">2.2.</span> <span class="toc-text">requirejs初体验</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#API详解"><span class="toc-number">2.3.</span> <span class="toc-text">API详解</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#require加载模块"><span class="toc-number">2.3.1.</span> <span class="toc-text">require加载模块</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#define定义模块"><span class="toc-number">2.3.2.</span> <span class="toc-text">define定义模块</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#模块之间的依赖"><span class="toc-number">2.3.3.</span> <span class="toc-text">模块之间的依赖</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#模块的输出（对外暴露的东西）"><span class="toc-number">2.3.4.</span> <span class="toc-text">模块的输出（对外暴露的东西）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#配置路径和别名"><span class="toc-number">2.3.5.</span> <span class="toc-text">配置路径和别名</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#加载非AMD规范的模块"><span class="toc-number">2.3.6.</span> <span class="toc-text">加载非AMD规范的模块</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#使用模块化加载jquery"><span class="toc-number">2.3.7.</span> <span class="toc-text">使用模块化加载jquery</span></a></li></ol></li></ol></li></ol>
+                    </div>
+                </span>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2015/07/06/test/">Test</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">学习</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/JavaScript/" class="article-tag-list-link color1">JavaScript</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/DOM/" class="article-tag-list-link color4">DOM</a>
-        		</li>
-      		
-		</ul>
-	</div>
+        
+    </div>
+</aside>
 
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+
   
   
-    </div></section>
   
 
-    
+  
+
+  
 
 
           </div>
@@ -392,10 +476,10 @@
 	var yiliaConfig = {
 		mathjax: true,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
-		isCategory: true,
+		isCategory: false,
 		open_in_new: true,
 		toc_hide_index: true,
 		root: "/",

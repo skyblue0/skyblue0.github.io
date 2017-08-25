@@ -6,20 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Test | ZZJ 博客</title>
+  <title>Uploadify文件上传插件使用教程 | ZZJ 博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Javascript,html,CSS,CSS3,教程,Hexo,博客,blog">
-<meta name="keywords" content="学习,随笔">
+  <meta name="description" content="uploadify插件 Uploadify是jQuery的一个文件上传插件，带有上传进度条。（easy to implement, highly customizable） 官网 官方文档  使用步骤 html结构  1&amp;lt;input type=&quot;file&quot; id=&quot;file_upload_1&quot;&amp;gt;  引入文件  123456&amp;lt;!--如果想要样式，那就需要引入, 非必须--&amp;gt;&amp;">
+<meta name="keywords" content="教程,学习">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Test">
-<meta property="og:url" content="http://yoursite.com/2017/08/06/test/index.html">
+<meta property="og:title" content="Uploadify文件上传插件使用教程">
+<meta property="og:url" content="http://yoursite.com/2016/03/06/uploadify文件上传插件使用教程/index.html">
 <meta property="og:site_name" content="ZZJ 博客">
-<meta property="og:description" content="Javascript,html,CSS,CSS3,教程,Hexo,博客,blog">
+<meta property="og:description" content="uploadify插件 Uploadify是jQuery的一个文件上传插件，带有上传进度条。（easy to implement, highly customizable） 官网 官方文档  使用步骤 html结构  1&amp;lt;input type=&quot;file&quot; id=&quot;file_upload_1&quot;&amp;gt;  引入文件  123456&amp;lt;!--如果想要样式，那就需要引入, 非必须--&amp;gt;&amp;">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2017-08-16T10:26:19.524Z">
+<meta property="og:updated_time" content="2017-08-25T10:09:39.562Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Test">
-<meta name="twitter:description" content="Javascript,html,CSS,CSS3,教程,Hexo,博客,blog">
+<meta name="twitter:title" content="Uploadify文件上传插件使用教程">
+<meta name="twitter:description" content="uploadify插件 Uploadify是jQuery的一个文件上传插件，带有上传进度条。（easy to implement, highly customizable） 官网 官方文档  使用步骤 html结构  1&amp;lt;input type=&quot;file&quot; id=&quot;file_upload_1&quot;&amp;gt;  引入文件  123456&amp;lt;!--如果想要样式，那就需要引入, 非必须--&amp;gt;&amp;">
   
     <link rel="alternative" href="/atom.xml" title="ZZJ 博客" type="application/atom+xml">
   
@@ -175,27 +175,53 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-test" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-uploadify文件上传插件使用教程" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      Test
+      Uploadify文件上传插件使用教程
     </h1>
   
 
         
-        <a href="/2017/08/06/test/" class="archive-article-date">
-  	<time datetime="2017-08-06T07:27:06.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-08-06</time>
+        <a href="/2016/03/06/uploadify文件上传插件使用教程/" class="archive-article-date">
+  	<time datetime="2016-03-06T06:36:06.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-03-06</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <h1 id="uploadify插件"><a href="#uploadify插件" class="headerlink" title="uploadify插件"></a>uploadify插件</h1><blockquote>
+<p>Uploadify是jQuery的一个文件上传插件，带有上传进度条。（easy to implement, highly customizable）</p>
+<p><a href="http://www.uploadify.com/" target="_blank" rel="external">官网</a></p>
+<p><a href="https://docs.ckeditor.com/#!/guide/dev_installation" target="_blank" rel="external">官方文档</a></p>
+</blockquote>
+<h2 id="使用步骤"><a href="#使用步骤" class="headerlink" title="使用步骤"></a>使用步骤</h2><ul>
+<li>html结构</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"file"</span> <span class="attr">id</span>=<span class="string">"file_upload_1"</span>&gt;</span></div></pre></td></tr></table></figure>
+<ul>
+<li>引入文件</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="comment">&lt;!--如果想要样式，那就需要引入, 非必须--&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span> <span class="attr">href</span>=<span class="string">"uploadify/uploadify.css"</span>&gt;</span></div><div class="line"></div><div class="line"><span class="comment">&lt;!--必须引入以下两个文件--&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"jquery-1.12.4.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"uploadify/jquery.uploadify.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div></pre></td></tr></table></figure>
+<ul>
+<li>使用插件</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">$(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">   $(<span class="string">"#file_upload_1"</span>).uploadify(&#123;</div><div class="line">     height        : <span class="number">30</span>,<span class="comment">//高度</span></div><div class="line">     swf           : <span class="string">'uploadify/uploadify.swf'</span>,<span class="comment">//通过swf上传，这个必须指定</span></div><div class="line">     uploader      : <span class="string">'uploadify/uploadify.php'</span>,<span class="comment">//图片上传的服务端地址。</span></div><div class="line">     width         : <span class="number">120</span><span class="comment">//宽度</span></div><div class="line">   &#125;);</div><div class="line"> &#125;);</div></pre></td></tr></table></figure>
+<ul>
+<li>常用参数解释</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">buttonCursor： 默认<span class="string">'hand'</span>  , 指定光标形状， <span class="string">'hand'</span>或者<span class="string">'arrow'</span></div><div class="line">buttonText： 指定按钮的文本内容</div><div class="line">fileObjName： 指定上传的这个表单框的name属性，后端才能获取到。</div><div class="line">fileSizeLimit： 指定文件大小限制</div><div class="line">fileTypeExts：指定上传文件的后缀名。</div></pre></td></tr></table></figure>
+<p>更多参数，参考<a href="http://www.uploadify.com/documentation/" target="_blank" rel="external">官方文档</a></p>
+<ul>
+<li>常用事件</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">onUploadSuccess: 上传成功时触发</div><div class="line">onUploadError： 上传失败时触发。</div></pre></td></tr></table></figure>
+
       
 
       
@@ -229,11 +255,11 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">学习</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">教程</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">学习</a>
         		</li>
       		
 		</ul>
@@ -245,11 +271,11 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/JavaScript/" class="article-tag-list-link color1">JavaScript</a>
+        			<a href="/categories/JQuery/" class="article-tag-list-link color2">JQuery</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="/categories/DOM/" class="article-tag-list-link color4">DOM</a>
+        			<a href="/categories/uploadify/" class="article-tag-list-link color5">uploadify</a>
         		</li>
       		
 		</ul>
@@ -304,7 +330,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2017/08/06/test/" alt="微信分享二维码">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2016/03/06/uploadify文件上传插件使用教程/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -318,9 +344,18 @@
   
 <nav id="article-nav">
   
+    <a href="/2017/08/05/404.html/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          (no title)
+        
+      </div>
+    </a>
   
-    <a href="/2017/08/05/404.html/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title"></div>
+  
+    <a href="/2015/11/28/JQuery中ajax的全局事件/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">JQuery中ajax的全局事件</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -347,7 +382,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    目录，不存在的…
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#uploadify插件"><span class="toc-number">1.</span> <span class="toc-text">uploadify插件</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#使用步骤"><span class="toc-number">1.1.</span> <span class="toc-text">使用步骤</span></a></li></ol></li></ol>
                     </div>
                 </span>
             </div>

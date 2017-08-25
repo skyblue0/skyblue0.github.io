@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-08-16T10:26:19.524Z</updated>
+  <updated>2017-08-05T06:56:49.223Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,28 +14,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>Test</title>
-    <link href="http://yoursite.com/2017/08/06/test/"/>
-    <id>http://yoursite.com/2017/08/06/test/</id>
-    <published>2017-08-06T07:27:06.000Z</published>
-    <updated>2017-08-16T10:26:19.524Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-      <category term="JavaScript" scheme="http://yoursite.com/categories/JavaScript/"/>
-    
-      <category term="DOM" scheme="http://yoursite.com/categories/JavaScript/DOM/"/>
-    
-    
-      <category term="学习" scheme="http://yoursite.com/tags/%E5%AD%A6%E4%B9%A0/"/>
-    
-      <category term="随笔" scheme="http://yoursite.com/tags/%E9%9A%8F%E7%AC%94/"/>
-    
-  </entry>
   
   <entry>
     <title></title>
@@ -70,6 +48,207 @@
     
     </summary>
     
+    
+  </entry>
+  
+  <entry>
+    <title>Uploadify文件上传插件使用教程</title>
+    <link href="http://yoursite.com/2016/03/06/uploadify%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E6%8F%92%E4%BB%B6%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/"/>
+    <id>http://yoursite.com/2016/03/06/uploadify文件上传插件使用教程/</id>
+    <published>2016-03-06T06:36:06.000Z</published>
+    <updated>2017-08-25T10:09:39.562Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="uploadify插件"><a href="#uploadify插件" class="headerlink" title="uploadify插件"></a>uploadify插件</h1><blockquote>
+<p>Uploadify是jQuery的一个文件上传插件，带有上传进度条。（easy to implement, highly customizable）</p>
+<p><a href="http://www.uploadify.com/" target="_blank" rel="external">官网</a></p>
+<p><a href="https://docs.ckeditor.com/#!/guide/dev_installation" target="_blank" rel="external">官方文档</a></p>
+</blockquote>
+<h2 id="使用步骤"><a href="#使用步骤" class="headerlink" title="使用步骤"></a>使用步骤</h2><ul>
+<li>html结构</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"file"</span> <span class="attr">id</span>=<span class="string">"file_upload_1"</span>&gt;</span></div></pre></td></tr></table></figure>
+<ul>
+<li>引入文件</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="comment">&lt;!--如果想要样式，那就需要引入, 非必须--&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span> <span class="attr">href</span>=<span class="string">"uploadify/uploadify.css"</span>&gt;</span></div><div class="line"></div><div class="line"><span class="comment">&lt;!--必须引入以下两个文件--&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"jquery-1.12.4.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"uploadify/jquery.uploadify.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div></pre></td></tr></table></figure>
+<ul>
+<li>使用插件</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">$(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">   $(<span class="string">"#file_upload_1"</span>).uploadify(&#123;</div><div class="line">     height        : <span class="number">30</span>,<span class="comment">//高度</span></div><div class="line">     swf           : <span class="string">'uploadify/uploadify.swf'</span>,<span class="comment">//通过swf上传，这个必须指定</span></div><div class="line">     uploader      : <span class="string">'uploadify/uploadify.php'</span>,<span class="comment">//图片上传的服务端地址。</span></div><div class="line">     width         : <span class="number">120</span><span class="comment">//宽度</span></div><div class="line">   &#125;);</div><div class="line"> &#125;);</div></pre></td></tr></table></figure>
+<ul>
+<li>常用参数解释</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">buttonCursor： 默认<span class="string">'hand'</span>  , 指定光标形状， <span class="string">'hand'</span>或者<span class="string">'arrow'</span></div><div class="line">buttonText： 指定按钮的文本内容</div><div class="line">fileObjName： 指定上传的这个表单框的name属性，后端才能获取到。</div><div class="line">fileSizeLimit： 指定文件大小限制</div><div class="line">fileTypeExts：指定上传文件的后缀名。</div></pre></td></tr></table></figure>
+<p>更多参数，参考<a href="http://www.uploadify.com/documentation/" target="_blank" rel="external">官方文档</a></p>
+<ul>
+<li>常用事件</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">onUploadSuccess: 上传成功时触发</div><div class="line">onUploadError： 上传失败时触发。</div></pre></td></tr></table></figure>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;uploadify插件&quot;&gt;&lt;a href=&quot;#uploadify插件&quot; class=&quot;headerlink&quot; title=&quot;uploadify插件&quot;&gt;&lt;/a&gt;uploadify插件&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;Uploadify是jQuery的一个文件
+    
+    </summary>
+    
+      <category term="JQuery" scheme="http://yoursite.com/categories/JQuery/"/>
+    
+      <category term="uploadify" scheme="http://yoursite.com/categories/JQuery/uploadify/"/>
+    
+    
+      <category term="教程" scheme="http://yoursite.com/tags/%E6%95%99%E7%A8%8B/"/>
+    
+      <category term="学习" scheme="http://yoursite.com/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JQuery中ajax的全局事件</title>
+    <link href="http://yoursite.com/2015/11/28/JQuery%E4%B8%ADajax%E7%9A%84%E5%85%A8%E5%B1%80%E4%BA%8B%E4%BB%B6/"/>
+    <id>http://yoursite.com/2015/11/28/JQuery中ajax的全局事件/</id>
+    <published>2015-11-28T03:20:26.000Z</published>
+    <updated>2017-08-25T10:04:15.337Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="JQ中AJAX的全局事件"><a href="#JQ中AJAX的全局事件" class="headerlink" title="JQ中AJAX的全局事件"></a>JQ中AJAX的全局事件</h1><blockquote>
+<p>ajax提供了6个全局函数，会被页面中所有的ajax请求触发，在不同时间点会触发不同的全局事件。</p>
+</blockquote>
+<p>在页面中会有很多的ajax请求，但是这些ajax请求都有相同的消息机制，比如我们需要在ajax请求发送之前弹出了一个提示框，提示”正在读取数据….” 在ajax请求成功时显示”获取数据成功…”,在ajax结束后隐藏提示框。如果不使用全局事件，那么需要在每一个ajax的beforeSend、success、complete回调函数中都加上相同的代码。</p>
+<ul>
+<li>jquery的全局事件需要给document注册（固定写法）</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$(<span class="built_in">document</span>).ajaxStart(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">  <span class="built_in">console</span>.log(<span class="string">"ajaxStart在开始一个ajax请求时触发"</span>);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<ul>
+<li>全局事件的执行时机</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="number">1.</span> ajaxStart在开始一个ajax请求时触发</div><div class="line"></div><div class="line"><span class="comment">//beforeSend回调函数</span></div><div class="line"><span class="number">2.</span> ajaxSend在beforeSend回调函数之后触发</div><div class="line"></div><div class="line"><span class="comment">//success回调函数</span></div><div class="line"><span class="number">3.</span> ajaxSuccess在success回调函数之后触发</div><div class="line"></div><div class="line"><span class="comment">//error</span></div><div class="line"><span class="number">4.</span> ajaxError在error回调函数之后触发</div><div class="line"></div><div class="line"><span class="comment">//complete</span></div><div class="line"><span class="number">5.</span> ajaxComplete在complete回调函数之后触发</div><div class="line"></div><div class="line"><span class="number">6.</span> ajaxStop在ajax请求结束时触发</div></pre></td></tr></table></figure>
+<ul>
+<li><p>ajaxStart和ajaxStop 并不是在每次请求都触发，而是在一个批次的请求请求中触发一次。</p>
+<ul>
+<li><p>无论在何时发送 Ajax 请求，jQuery 都会检查是否存在其他 Ajax 请求。如果不存在，则 jQuery 会触发该 ajaxStart 事件</p>
+</li>
+<li><p>无论 Ajax 请求在何时完成 ，jQuery 都会检查是否存在其他 Ajax 请求。如果不存在，则 jQuery 会触发该 ajaxStop 事件。<a href="http://www.w3school.com.cn/jquery/ajax_ajaxstop.asp" target="_blank" rel="external">w3c</a></p>
+</li>
+</ul>
+</li>
+<li><p>如果某个ajax请求不希望触发全局事件，可以指定<code>global:false</code></p>
+</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">$.ajax(&#123;</div><div class="line">  type:<span class="string">"get"</span>,</div><div class="line">  url:<span class="string">"02-ajax.php"</span>,</div><div class="line">  <span class="comment">//指定了global为false之后，这个ajax请求就不会触发全局事件了。</span></div><div class="line">  global:<span class="literal">false</span>,</div><div class="line">  success:<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="built_in">console</span>.log(<span class="string">"完成"</span>);</div><div class="line">  &#125;</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;JQ中AJAX的全局事件&quot;&gt;&lt;a href=&quot;#JQ中AJAX的全局事件&quot; class=&quot;headerlink&quot; title=&quot;JQ中AJAX的全局事件&quot;&gt;&lt;/a&gt;JQ中AJAX的全局事件&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;ajax提供了6个全局函数，会被页
+    
+    </summary>
+    
+      <category term="JQuery" scheme="http://yoursite.com/categories/JQuery/"/>
+    
+      <category term="Ajax" scheme="http://yoursite.com/categories/JQuery/Ajax/"/>
+    
+    
+      <category term="学习" scheme="http://yoursite.com/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="随笔" scheme="http://yoursite.com/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Nprogress进度条插件使用教程</title>
+    <link href="http://yoursite.com/2015/09/20/nprogress%E8%BF%9B%E5%BA%A6%E6%9D%A1%E6%8F%92%E4%BB%B6%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/"/>
+    <id>http://yoursite.com/2015/09/20/nprogress进度条插件使用教程/</id>
+    <published>2015-09-20T02:27:06.000Z</published>
+    <updated>2017-08-25T10:00:22.333Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="进度条"><a href="#进度条" class="headerlink" title="进度条"></a>进度条</h1><h2 id="nprogress进度条插件"><a href="#nprogress进度条插件" class="headerlink" title="nprogress进度条插件"></a>nprogress进度条插件</h2><blockquote>
+<p>nprogress插件是一个适用于ajax应用的轻量级的进度条插件。</p>
+</blockquote>
+<p><a href="http://ricostacruz.com/nprogress/" target="_blank" rel="external">官网</a></p>
+<p><a href="https://github.com/rstacruz/nprogress" target="_blank" rel="external">github地址</a></p>
+<h3 id="使用步骤"><a href="#使用步骤" class="headerlink" title="使用步骤"></a>使用步骤</h3><ul>
+<li>引入js文件和css文件</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">'stylesheet'</span> <span class="attr">href</span>=<span class="string">'nprogress.css'</span>/&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">'nprogress.js'</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div></pre></td></tr></table></figure>
+<ul>
+<li>使用进度条插件</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//引入了nprogress.js文件后，就有了一个全局对象NProgress对象</span></div><div class="line"><span class="comment">//开启进度条</span></div><div class="line">NProgress.start();</div><div class="line"><span class="comment">//关闭进度条</span></div><div class="line">NProgress.done();</div></pre></td></tr></table></figure>
+<h3 id="使用场景"><a href="#使用场景" class="headerlink" title="使用场景"></a>使用场景</h3><ul>
+<li><p>添加到你调用 Ajax 的地方！绑定它到 jQuery <code>ajaxStart</code> 和 <code>ajaxStop</code> 事件上</p>
+</li>
+<li><p>如果不是ajax请求，也可以把它绑定到 <code>$(document).ready</code> 和<code>$(window).load</code></p>
+</li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;进度条&quot;&gt;&lt;a href=&quot;#进度条&quot; class=&quot;headerlink&quot; title=&quot;进度条&quot;&gt;&lt;/a&gt;进度条&lt;/h1&gt;&lt;h2 id=&quot;nprogress进度条插件&quot;&gt;&lt;a href=&quot;#nprogress进度条插件&quot; class=&quot;headerlink&quot; 
+    
+    </summary>
+    
+      <category term="nprogress" scheme="http://yoursite.com/categories/nprogress/"/>
+    
+      <category term="nprogress" scheme="http://yoursite.com/categories/nprogress/nprogress/"/>
+    
+    
+      <category term="教程" scheme="http://yoursite.com/tags/%E6%95%99%E7%A8%8B/"/>
+    
+      <category term="学习" scheme="http://yoursite.com/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Bootstrap-Datepicker使用教程</title>
+    <link href="http://yoursite.com/2015/09/10/bootstrap-datepicker%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/"/>
+    <id>http://yoursite.com/2015/09/10/bootstrap-datepicker使用教程/</id>
+    <published>2015-09-10T03:27:00.000Z</published>
+    <updated>2017-08-25T01:46:49.182Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="bootstrap-datepicker"><a href="#bootstrap-datepicker" class="headerlink" title="bootstrap-datepicker"></a>bootstrap-datepicker</h2><blockquote>
+<p>bootstrap-datepicker插件依赖于bootstrap，bootstrap依赖jquery，提供了一个bootstrap风格的日期插件。</p>
+<p><a href="https://github.com/uxsolutions/bootstrap-datepicker" target="_blank" rel="external">github地址</a>  </p>
+<p><a href="http://bootstrap-datepicker.readthedocs.io/en/latest/" target="_blank" rel="external">官网地址</a></p>
+</blockquote>
+<ul>
+<li>日期插件的目的</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="number">1.</span> 保证正确的日期格式</div><div class="line"><span class="number">2.</span> 用户使用更加方便。不用手动输入日期。</div></pre></td></tr></table></figure>
+<h3 id="使用步骤"><a href="#使用步骤" class="headerlink" title="使用步骤"></a>使用步骤</h3><ul>
+<li>引入css文件</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="comment">&lt;!--如果引入这个css文件，需要依赖bootstrap的css文件--&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span> <span class="attr">href</span>=<span class="string">"bootstrap-datepicker/bootstrap-datepicker3.css"</span>&gt;</span></div><div class="line"><span class="comment">&lt;!--这是datepicker独立的css文件，不需要依赖bootstrap的css文件--&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span> <span class="attr">href</span>=<span class="string">"bootstrap-datepicker/bootstrap-datepicker3.standalone.css"</span>&gt;</span></div></pre></td></tr></table></figure>
+<ul>
+<li>引入js文件</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="comment">&lt;!--bootstrap文件依赖于jquery--&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"jquery-1.12.4.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"><span class="comment">&lt;!--datepicker依赖于bootstrap--&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"bootstrap.min.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"><span class="comment">&lt;!--datepicker文件--&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"bootstrap-datepicker/bootstrap-datepicker.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"><span class="comment">&lt;!--想要中文时，需要引入--&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"bootstrap-datepicker/bootstrap-datepicker.zh-CN.min.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div></pre></td></tr></table></figure>
+<ul>
+<li>使用bootstrap-datepicker</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$(<span class="string">".date"</span>).datepicker();</div></pre></td></tr></table></figure>
+<ul>
+<li>常用配置</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">$(<span class="string">".date"</span>).datepicker(&#123;</div><div class="line">  format:<span class="string">"yyyy-mm-dd"</span>,<span class="comment">//日期格式</span></div><div class="line">  autoclose:<span class="literal">true</span>,<span class="comment">//选完日期是否自动关闭，默认false</span></div><div class="line">  language:<span class="string">"zh-CN"</span>,<span class="comment">//指定语言，默认en，需要额外引入js文件</span></div><div class="line">  startDate:<span class="string">"-3d"</span>,<span class="comment">//指定开始时间，-3d:前三天</span></div><div class="line">  endDate:<span class="string">"+3d"</span>,<span class="comment">//指定结束时间，+3d:后三天</span></div><div class="line">  todayBtn:<span class="string">"linked"</span>,<span class="comment">//是否显示今日按钮</span></div><div class="line">  todayHighlight:<span class="literal">true</span><span class="comment">//是否让今天高亮显示</span></div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;bootstrap-datepicker&quot;&gt;&lt;a href=&quot;#bootstrap-datepicker&quot; class=&quot;headerlink&quot; title=&quot;bootstrap-datepicker&quot;&gt;&lt;/a&gt;bootstrap-datepicker&lt;/h2&gt;&lt;
+    
+    </summary>
+    
+      <category term="bootstrap-datepicker" scheme="http://yoursite.com/categories/bootstrap-datepicker/"/>
+    
+      <category term="datepicker" scheme="http://yoursite.com/categories/bootstrap-datepicker/datepicker/"/>
+    
+    
+      <category term="教程" scheme="http://yoursite.com/tags/%E6%95%99%E7%A8%8B/"/>
+    
+      <category term="学习" scheme="http://yoursite.com/tags/%E5%AD%A6%E4%B9%A0/"/>
     
   </entry>
   
@@ -250,7 +429,7 @@
     <link href="http://yoursite.com/2015/08/08/git%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/"/>
     <id>http://yoursite.com/2015/08/08/git基础教程/</id>
     <published>2015-08-08T04:27:00.000Z</published>
-    <updated>2017-08-25T00:32:52.908Z</updated>
+    <updated>2017-08-25T00:44:49.886Z</updated>
     
     <content type="html"><![CDATA[<h1 id="shell-bash"><a href="#shell-bash" class="headerlink" title="shell+bash"></a>shell+bash</h1><h2 id="shell基本概念"><a href="#shell基本概念" class="headerlink" title="shell基本概念"></a>shell基本概念</h2><blockquote>
 <p>在计算机科学中，Shell俗称壳，是指“提供使用者使用界面”的软件（命令解析器）、比如window系统的cmd、linux系统中的bash。<strong>它可以接受用户的命令，然后调用响应的应用程序。</strong> </p>
@@ -271,11 +450,6 @@
 <p>bash是linux操作系统默认的命令行shell。windows系统中并不支持bash。</p>
 <p>想要在windows中使用bash，需要安装软件，这个软件<strong>模拟集成</strong> 了bash的大部分命令。</p>
 </blockquote>
-<p>学习bash的目的：</p>
-<ol>
-<li>将来工作过程中，碰到了linux服务器，能够大致知道如何操作。</li>
-<li>git bash中需要使用到一些简单的bash命令。</li>
-</ol>
 <h2 id="常见的bash命令"><a href="#常见的bash命令" class="headerlink" title="常见的bash命令"></a>常见的bash命令</h2><ol>
 <li>在任意文件夹中，都可以使用右键，通过git bash here打开命令行窗口，此时的路径就是当前目录。</li>
 <li>窗口上右键，通过options–&gt;Text–&gt;select可以调整字体的大小。</li>
@@ -450,6 +624,28 @@
     
     
       <category term="教程" scheme="http://yoursite.com/tags/%E6%95%99%E7%A8%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Test</title>
+    <link href="http://yoursite.com/2015/07/06/test/"/>
+    <id>http://yoursite.com/2015/07/06/test/</id>
+    <published>2015-07-06T07:27:06.000Z</published>
+    <updated>2017-08-25T01:01:17.159Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="JavaScript" scheme="http://yoursite.com/categories/JavaScript/"/>
+    
+      <category term="DOM" scheme="http://yoursite.com/categories/JavaScript/DOM/"/>
+    
+    
+      <category term="学习" scheme="http://yoursite.com/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="随笔" scheme="http://yoursite.com/tags/%E9%9A%8F%E7%AC%94/"/>
     
   </entry>
   

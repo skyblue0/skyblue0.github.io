@@ -175,98 +175,6 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-test" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/08/06/test/">Test</a>
-    </h1>
-  
-
-        
-        <a href="/2017/08/06/test/" class="archive-article-date">
-  	<time datetime="2017-08-06T07:27:06.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-08-06</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">学习</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/JavaScript/" class="article-tag-list-link color1">JavaScript</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/DOM/" class="article-tag-list-link color4">DOM</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/08/06/test/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
     <article id="post-/404.html" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -300,6 +208,469 @@
       
         <p class="article-more-link">
           <a class="article-more-a" href="/2017/08/05/404.html/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-uploadify文件上传插件使用教程" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/03/06/uploadify文件上传插件使用教程/">Uploadify文件上传插件使用教程</a>
+    </h1>
+  
+
+        
+        <a href="/2016/03/06/uploadify文件上传插件使用教程/" class="archive-article-date">
+  	<time datetime="2016-03-06T06:36:06.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-03-06</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="uploadify插件"><a href="#uploadify插件" class="headerlink" title="uploadify插件"></a>uploadify插件</h1><blockquote>
+<p>Uploadify是jQuery的一个文件上传插件，带有上传进度条。（easy to implement, highly customizable）</p>
+<p><a href="http://www.uploadify.com/" target="_blank" rel="external">官网</a></p>
+<p><a href="https://docs.ckeditor.com/#!/guide/dev_installation" target="_blank" rel="external">官方文档</a></p>
+</blockquote>
+<h2 id="使用步骤"><a href="#使用步骤" class="headerlink" title="使用步骤"></a>使用步骤</h2><ul>
+<li>html结构</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"file"</span> <span class="attr">id</span>=<span class="string">"file_upload_1"</span>&gt;</span></div></pre></td></tr></table></figure>
+<ul>
+<li>引入文件</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="comment">&lt;!--如果想要样式，那就需要引入, 非必须--&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span> <span class="attr">href</span>=<span class="string">"uploadify/uploadify.css"</span>&gt;</span></div><div class="line"></div><div class="line"><span class="comment">&lt;!--必须引入以下两个文件--&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"jquery-1.12.4.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"uploadify/jquery.uploadify.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div></pre></td></tr></table></figure>
+<ul>
+<li>使用插件</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">$(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">   $(<span class="string">"#file_upload_1"</span>).uploadify(&#123;</div><div class="line">     height        : <span class="number">30</span>,<span class="comment">//高度</span></div><div class="line">     swf           : <span class="string">'uploadify/uploadify.swf'</span>,<span class="comment">//通过swf上传，这个必须指定</span></div><div class="line">     uploader      : <span class="string">'uploadify/uploadify.php'</span>,<span class="comment">//图片上传的服务端地址。</span></div><div class="line">     width         : <span class="number">120</span><span class="comment">//宽度</span></div><div class="line">   &#125;);</div><div class="line"> &#125;);</div></pre></td></tr></table></figure>
+<ul>
+<li>常用参数解释</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">buttonCursor： 默认<span class="string">'hand'</span>  , 指定光标形状， <span class="string">'hand'</span>或者<span class="string">'arrow'</span></div><div class="line">buttonText： 指定按钮的文本内容</div><div class="line">fileObjName： 指定上传的这个表单框的name属性，后端才能获取到。</div><div class="line">fileSizeLimit： 指定文件大小限制</div><div class="line">fileTypeExts：指定上传文件的后缀名。</div></pre></td></tr></table></figure>
+<p>更多参数，参考<a href="http://www.uploadify.com/documentation/" target="_blank" rel="external">官方文档</a></p>
+<ul>
+<li>常用事件</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">onUploadSuccess: 上传成功时触发</div><div class="line">onUploadError： 上传失败时触发。</div></pre></td></tr></table></figure>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">教程</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">学习</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/JQuery/" class="article-tag-list-link color2">JQuery</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/uploadify/" class="article-tag-list-link color5">uploadify</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2016/03/06/uploadify文件上传插件使用教程/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-JQuery中ajax的全局事件" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/11/28/JQuery中ajax的全局事件/">JQuery中ajax的全局事件</a>
+    </h1>
+  
+
+        
+        <a href="/2015/11/28/JQuery中ajax的全局事件/" class="archive-article-date">
+  	<time datetime="2015-11-28T03:20:26.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2015-11-28</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="JQ中AJAX的全局事件"><a href="#JQ中AJAX的全局事件" class="headerlink" title="JQ中AJAX的全局事件"></a>JQ中AJAX的全局事件</h1><blockquote>
+<p>ajax提供了6个全局函数，会被页面中所有的ajax请求触发，在不同时间点会触发不同的全局事件。</p>
+</blockquote>
+<p>在页面中会有很多的ajax请求，但是这些ajax请求都有相同的消息机制，比如我们需要在ajax请求发送之前弹出了一个提示框，提示”正在读取数据….” 在ajax请求成功时显示”获取数据成功…”,在ajax结束后隐藏提示框。如果不使用全局事件，那么需要在每一个ajax的beforeSend、success、complete回调函数中都加上相同的代码。</p>
+<ul>
+<li>jquery的全局事件需要给document注册（固定写法）</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$(<span class="built_in">document</span>).ajaxStart(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">  <span class="built_in">console</span>.log(<span class="string">"ajaxStart在开始一个ajax请求时触发"</span>);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<ul>
+<li>全局事件的执行时机</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="number">1.</span> ajaxStart在开始一个ajax请求时触发</div><div class="line"></div><div class="line"><span class="comment">//beforeSend回调函数</span></div><div class="line"><span class="number">2.</span> ajaxSend在beforeSend回调函数之后触发</div><div class="line"></div><div class="line"><span class="comment">//success回调函数</span></div><div class="line"><span class="number">3.</span> ajaxSuccess在success回调函数之后触发</div><div class="line"></div><div class="line"><span class="comment">//error</span></div><div class="line"><span class="number">4.</span> ajaxError在error回调函数之后触发</div><div class="line"></div><div class="line"><span class="comment">//complete</span></div><div class="line"><span class="number">5.</span> ajaxComplete在complete回调函数之后触发</div><div class="line"></div><div class="line"><span class="number">6.</span> ajaxStop在ajax请求结束时触发</div></pre></td></tr></table></figure>
+<ul>
+<li><p>ajaxStart和ajaxStop 并不是在每次请求都触发，而是在一个批次的请求请求中触发一次。</p>
+<ul>
+<li><p>无论在何时发送 Ajax 请求，jQuery 都会检查是否存在其他 Ajax 请求。如果不存在，则 jQuery 会触发该 ajaxStart 事件</p>
+</li>
+<li><p>无论 Ajax 请求在何时完成 ，jQuery 都会检查是否存在其他 Ajax 请求。如果不存在，则 jQuery 会触发该 ajaxStop 事件。<a href="http://www.w3school.com.cn/jquery/ajax_ajaxstop.asp" target="_blank" rel="external">w3c</a></p>
+</li>
+</ul>
+</li>
+<li><p>如果某个ajax请求不希望触发全局事件，可以指定<code>global:false</code></p>
+</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">$.ajax(&#123;</div><div class="line">  type:<span class="string">"get"</span>,</div><div class="line">  url:<span class="string">"02-ajax.php"</span>,</div><div class="line">  <span class="comment">//指定了global为false之后，这个ajax请求就不会触发全局事件了。</span></div><div class="line">  global:<span class="literal">false</span>,</div><div class="line">  success:<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="built_in">console</span>.log(<span class="string">"完成"</span>);</div><div class="line">  &#125;</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">学习</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/JQuery/" class="article-tag-list-link color2">JQuery</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/Ajax/" class="article-tag-list-link color5">Ajax</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2015/11/28/JQuery中ajax的全局事件/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-nprogress进度条插件使用教程" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/09/20/nprogress进度条插件使用教程/">Nprogress进度条插件使用教程</a>
+    </h1>
+  
+
+        
+        <a href="/2015/09/20/nprogress进度条插件使用教程/" class="archive-article-date">
+  	<time datetime="2015-09-20T02:27:06.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2015-09-20</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="进度条"><a href="#进度条" class="headerlink" title="进度条"></a>进度条</h1><h2 id="nprogress进度条插件"><a href="#nprogress进度条插件" class="headerlink" title="nprogress进度条插件"></a>nprogress进度条插件</h2><blockquote>
+<p>nprogress插件是一个适用于ajax应用的轻量级的进度条插件。</p>
+</blockquote>
+<p><a href="http://ricostacruz.com/nprogress/" target="_blank" rel="external">官网</a></p>
+<p><a href="https://github.com/rstacruz/nprogress" target="_blank" rel="external">github地址</a></p>
+<h3 id="使用步骤"><a href="#使用步骤" class="headerlink" title="使用步骤"></a>使用步骤</h3><ul>
+<li>引入js文件和css文件</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">'stylesheet'</span> <span class="attr">href</span>=<span class="string">'nprogress.css'</span>/&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">'nprogress.js'</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div></pre></td></tr></table></figure>
+<ul>
+<li>使用进度条插件</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//引入了nprogress.js文件后，就有了一个全局对象NProgress对象</span></div><div class="line"><span class="comment">//开启进度条</span></div><div class="line">NProgress.start();</div><div class="line"><span class="comment">//关闭进度条</span></div><div class="line">NProgress.done();</div></pre></td></tr></table></figure>
+<h3 id="使用场景"><a href="#使用场景" class="headerlink" title="使用场景"></a>使用场景</h3><ul>
+<li><p>添加到你调用 Ajax 的地方！绑定它到 jQuery <code>ajaxStart</code> 和 <code>ajaxStop</code> 事件上</p>
+</li>
+<li><p>如果不是ajax请求，也可以把它绑定到 <code>$(document).ready</code> 和<code>$(window).load</code></p>
+</li>
+</ul>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">教程</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">学习</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/nprogress/" class="article-tag-list-link color5">nprogress</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/nprogress/" class="article-tag-list-link color5">nprogress</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2015/09/20/nprogress进度条插件使用教程/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-bootstrap-datepicker使用教程" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/09/10/bootstrap-datepicker使用教程/">Bootstrap-Datepicker使用教程</a>
+    </h1>
+  
+
+        
+        <a href="/2015/09/10/bootstrap-datepicker使用教程/" class="archive-article-date">
+  	<time datetime="2015-09-10T03:27:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2015-09-10</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="bootstrap-datepicker"><a href="#bootstrap-datepicker" class="headerlink" title="bootstrap-datepicker"></a>bootstrap-datepicker</h2><blockquote>
+<p>bootstrap-datepicker插件依赖于bootstrap，bootstrap依赖jquery，提供了一个bootstrap风格的日期插件。</p>
+<p><a href="https://github.com/uxsolutions/bootstrap-datepicker" target="_blank" rel="external">github地址</a>  </p>
+<p><a href="http://bootstrap-datepicker.readthedocs.io/en/latest/" target="_blank" rel="external">官网地址</a></p>
+</blockquote>
+<ul>
+<li>日期插件的目的</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="number">1.</span> 保证正确的日期格式</div><div class="line"><span class="number">2.</span> 用户使用更加方便。不用手动输入日期。</div></pre></td></tr></table></figure>
+<h3 id="使用步骤"><a href="#使用步骤" class="headerlink" title="使用步骤"></a>使用步骤</h3><ul>
+<li>引入css文件</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="comment">&lt;!--如果引入这个css文件，需要依赖bootstrap的css文件--&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span> <span class="attr">href</span>=<span class="string">"bootstrap-datepicker/bootstrap-datepicker3.css"</span>&gt;</span></div><div class="line"><span class="comment">&lt;!--这是datepicker独立的css文件，不需要依赖bootstrap的css文件--&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span> <span class="attr">href</span>=<span class="string">"bootstrap-datepicker/bootstrap-datepicker3.standalone.css"</span>&gt;</span></div></pre></td></tr></table></figure>
+<ul>
+<li>引入js文件</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="comment">&lt;!--bootstrap文件依赖于jquery--&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"jquery-1.12.4.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"><span class="comment">&lt;!--datepicker依赖于bootstrap--&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"bootstrap.min.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"><span class="comment">&lt;!--datepicker文件--&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"bootstrap-datepicker/bootstrap-datepicker.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"><span class="comment">&lt;!--想要中文时，需要引入--&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"bootstrap-datepicker/bootstrap-datepicker.zh-CN.min.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div></pre></td></tr></table></figure>
+<ul>
+<li>使用bootstrap-datepicker</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$(<span class="string">".date"</span>).datepicker();</div></pre></td></tr></table></figure>
+<ul>
+<li>常用配置</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">$(<span class="string">".date"</span>).datepicker(&#123;</div><div class="line">  format:<span class="string">"yyyy-mm-dd"</span>,<span class="comment">//日期格式</span></div><div class="line">  autoclose:<span class="literal">true</span>,<span class="comment">//选完日期是否自动关闭，默认false</span></div><div class="line">  language:<span class="string">"zh-CN"</span>,<span class="comment">//指定语言，默认en，需要额外引入js文件</span></div><div class="line">  startDate:<span class="string">"-3d"</span>,<span class="comment">//指定开始时间，-3d:前三天</span></div><div class="line">  endDate:<span class="string">"+3d"</span>,<span class="comment">//指定结束时间，+3d:后三天</span></div><div class="line">  todayBtn:<span class="string">"linked"</span>,<span class="comment">//是否显示今日按钮</span></div><div class="line">  todayHighlight:<span class="literal">true</span><span class="comment">//是否让今天高亮显示</span></div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">教程</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">学习</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/bootstrap-datepicker/" class="article-tag-list-link color1">bootstrap-datepicker</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/datepicker/" class="article-tag-list-link color1">datepicker</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2015/09/10/bootstrap-datepicker使用教程/">展开全文 >></a>
         </p>
       
 
@@ -606,11 +977,6 @@
 <p>bash是linux操作系统默认的命令行shell。windows系统中并不支持bash。</p>
 <p>想要在windows中使用bash，需要安装软件，这个软件<strong>模拟集成</strong> 了bash的大部分命令。</p>
 </blockquote>
-<p>学习bash的目的：</p>
-<ol>
-<li>将来工作过程中，碰到了linux服务器，能够大致知道如何操作。</li>
-<li>git bash中需要使用到一些简单的bash命令。</li>
-</ol>
 <h2 id="常见的bash命令"><a href="#常见的bash命令" class="headerlink" title="常见的bash命令"></a>常见的bash命令</h2><ol>
 <li>在任意文件夹中，都可以使用右键，通过git bash here打开命令行窗口，此时的路径就是当前目录。</li>
 <li>窗口上右键，通过options–&gt;Text–&gt;select可以调整字体的大小。</li>
@@ -876,6 +1242,98 @@
       
         <p class="article-more-link">
           <a class="article-more-a" href="/2015/07/06/hello-world/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-test" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/07/06/test/">Test</a>
+    </h1>
+  
+
+        
+        <a href="/2015/07/06/test/" class="archive-article-date">
+  	<time datetime="2015-07-06T07:27:06.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2015-07-06</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">学习</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/JavaScript/" class="article-tag-list-link color1">JavaScript</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/DOM/" class="article-tag-list-link color4">DOM</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2015/07/06/test/">展开全文 >></a>
         </p>
       
 

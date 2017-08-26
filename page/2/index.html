@@ -175,6 +175,117 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-nprogress进度条插件使用教程" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/09/20/nprogress进度条插件使用教程/">Nprogress进度条插件使用教程</a>
+    </h1>
+  
+
+        
+        <a href="/2015/09/20/nprogress进度条插件使用教程/" class="archive-article-date">
+  	<time datetime="2015-09-20T02:27:06.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2015-09-20</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="进度条"><a href="#进度条" class="headerlink" title="进度条"></a>进度条</h1><h2 id="nprogress进度条插件"><a href="#nprogress进度条插件" class="headerlink" title="nprogress进度条插件"></a>nprogress进度条插件</h2><blockquote>
+<p>nprogress插件是一个适用于ajax应用的轻量级的进度条插件。</p>
+</blockquote>
+<p><a href="http://ricostacruz.com/nprogress/" target="_blank" rel="external">官网</a></p>
+<p><a href="https://github.com/rstacruz/nprogress" target="_blank" rel="external">github地址</a></p>
+<h3 id="使用步骤"><a href="#使用步骤" class="headerlink" title="使用步骤"></a>使用步骤</h3><ul>
+<li>引入js文件和css文件</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">'stylesheet'</span> <span class="attr">href</span>=<span class="string">'nprogress.css'</span>/&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">'nprogress.js'</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div></pre></td></tr></table></figure>
+<ul>
+<li>使用进度条插件</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//引入了nprogress.js文件后，就有了一个全局对象NProgress对象</span></div><div class="line"><span class="comment">//开启进度条</span></div><div class="line">NProgress.start();</div><div class="line"><span class="comment">//关闭进度条</span></div><div class="line">NProgress.done();</div></pre></td></tr></table></figure>
+<h3 id="使用场景"><a href="#使用场景" class="headerlink" title="使用场景"></a>使用场景</h3><ul>
+<li><p>添加到你调用 Ajax 的地方！绑定它到 jQuery <code>ajaxStart</code> 和 <code>ajaxStop</code> 事件上</p>
+</li>
+<li><p>如果不是ajax请求，也可以把它绑定到 <code>$(document).ready</code> 和<code>$(window).load</code></p>
+</li>
+</ul>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">教程</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">学习</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/nprogress/" class="article-tag-list-link color5">nprogress</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/nprogress/" class="article-tag-list-link color5">nprogress</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2015/09/20/nprogress进度条插件使用教程/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-bootstrap-datepicker使用教程" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -334,7 +445,10 @@
 <li>在当前分支的任何操作，都不会影响到其他的分支，除非进行了分支合并。</li>
 <li>切换分支之前，<strong>必须保证代码已经提交了</strong> </li>
 </ul>
-<h3 id="创建并切换分支"><a href="#创建并切换分支" class="headerlink" title="创建并切换分支"></a>创建并切换分支</h3><h3 id="删除分支"><a href="#删除分支" class="headerlink" title="删除分支"></a>删除分支</h3><ul>
+<h3 id="创建并切换分支"><a href="#创建并切换分支" class="headerlink" title="创建并切换分支"></a>创建并切换分支</h3><ul>
+<li>git checkout -b 分支名</li>
+</ul>
+<h3 id="删除分支"><a href="#删除分支" class="headerlink" title="删除分支"></a>删除分支</h3><ul>
 <li><code>git branch -d 分支名称</code> 可以删除分支</li>
 <li>注意：不能在当前分支删除当前分支，需要切换到其他分支才能删除。</li>
 <li>注意：<code>master</code>分支是可以删除的，但是不推荐那么做。</li>

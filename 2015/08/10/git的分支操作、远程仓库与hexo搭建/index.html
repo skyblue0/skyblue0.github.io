@@ -21,7 +21,7 @@
 <meta property="og:image" content="http://yoursite.com/2015/08/10/git的分支操作、远程仓库与hexo搭建/对称加密.jpg">
 <meta property="og:image" content="http://yoursite.com/2015/08/10/git的分支操作、远程仓库与hexo搭建/非对称加密.jpg">
 <meta property="og:image" content="http://yoursite.com/2015/08/10/git的分支操作、远程仓库与hexo搭建/ssh免登陆.png">
-<meta property="og:updated_time" content="2017-08-25T00:39:15.528Z">
+<meta property="og:updated_time" content="2017-08-26T00:34:07.151Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Git的分支操作、远程仓库与hexo搭建">
 <meta name="twitter:description" content="git分支操作分支就是科幻电影里面的平行宇宙，当你正在电脑前努力学习Git的时候，另一个你正在另一个平行宇宙里努力学习SVN。 如果两个平行宇宙互不干扰，那对现在的你也没啥影响。不过，在某个时间点，两个平行宇宙合并了，结果，你既学会了Git又学会了SVN！  为什么要有分支？ 如果你要开发一个新的功能，需要2周时间，第一周你只能写50%代码，如果此时立即提交，代码没写完，不完整的代码会影响到别人无">
@@ -223,7 +223,10 @@
 <li>在当前分支的任何操作，都不会影响到其他的分支，除非进行了分支合并。</li>
 <li>切换分支之前，<strong>必须保证代码已经提交了</strong> </li>
 </ul>
-<h3 id="创建并切换分支"><a href="#创建并切换分支" class="headerlink" title="创建并切换分支"></a>创建并切换分支</h3><h3 id="删除分支"><a href="#删除分支" class="headerlink" title="删除分支"></a>删除分支</h3><ul>
+<h3 id="创建并切换分支"><a href="#创建并切换分支" class="headerlink" title="创建并切换分支"></a>创建并切换分支</h3><ul>
+<li>git checkout -b 分支名</li>
+</ul>
+<h3 id="删除分支"><a href="#删除分支" class="headerlink" title="删除分支"></a>删除分支</h3><ul>
 <li><code>git branch -d 分支名称</code> 可以删除分支</li>
 <li>注意：不能在当前分支删除当前分支，需要切换到其他分支才能删除。</li>
 <li>注意：<code>master</code>分支是可以删除的，但是不推荐那么做。</li>

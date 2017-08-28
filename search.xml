@@ -30,12 +30,14 @@
       <url>/2016/12/10/Jcrop2-x%EF%BC%88%E5%9B%BE%E7%89%87%E5%89%AA%E8%A3%81%EF%BC%89%E6%8F%92%E4%BB%B6%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</url>
       <content type="html"><![CDATA[<h1 id="Jcrop2-x（图片剪裁）插件使用教程"><a href="#Jcrop2-x（图片剪裁）插件使用教程" class="headerlink" title="Jcrop2.x（图片剪裁）插件使用教程"></a>Jcrop2.x（图片剪裁）插件使用教程</h1><pre><code>最近项目中用到了图片裁切上传，可是没接触过，不知用啥插件好，于是便上百度搜了一下，找到了 Jcrop2.x的插件。下面说一下使用心得与使用的基本步骤。
 </code></pre><h2 id="使用步骤"><a href="#使用步骤" class="headerlink" title="使用步骤"></a>使用步骤</h2><h3 id="一、文件下载"><a href="#一、文件下载" class="headerlink" title="一、文件下载"></a>一、文件下载</h3><pre><code>首先说明一下，最好使用Jcrop2.0版本以上的，因为2.0以下的版本用户体验一点都不友好，其中有很多的坑，慎用！
-</code></pre><ol>
+</code></pre><ul>
 <li>进入官网找到“Download Jcrop”点击进入<br><a href="http://jcrop.org/" target="_blank" rel="external">官网地址</a><br><a href="http://jcrop.org/doc/quickstart" target="_blank" rel="external">官方文档</a></li>
 <li>点击左上方的Download Jcrop2.x进行下载，如下图<img src="/2016/12/10/Jcrop2-x（图片剪裁）插件使用教程/download.png" alt="[下载]" title="[下载]">
 <h3 id="二、使用步骤"><a href="#二、使用步骤" class="headerlink" title="二、使用步骤"></a>二、使用步骤</h3></li>
+</ul>
+<ol>
 <li><p>文件引入</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">方法<span class="number">1</span>： CDN引入</div><div class="line">&lt;script src=<span class="string">"//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"</span>&gt;&lt;/script&gt;</div><div class="line">&lt;script src=<span class="string">"http://jcrop-cdn.tapmodo.com/v2.0.0-RC1/js/Jcrop.js"</span>&gt;&lt;/script&gt;</div><div class="line">&lt;link rel=<span class="string">"stylesheet"</span> href=<span class="string">"http://jcrop-cdn.tapmodo.com/v2.0.0-RC1/css/Jcrop.css"</span> type=<span class="string">"text/css"</span>&gt;</div><div class="line">方法<span class="number">2</span>： 本地引入</div><div class="line">&lt;script src=<span class="string">"libs/jquery/1.10.2/jquery.min.js"</span>&gt;&lt;/script&gt;</div><div class="line">&lt;script src=<span class="string">"libs/Jcrop/js/Jcrop.js"</span>&gt;&lt;/script&gt;</div><div class="line">&lt;link rel=<span class="string">"stylesheet"</span> href=<span class="string">"libs/Jcrop/css/Jcrop.css"</span> type=<span class="string">"text/css"</span>&gt;</div></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">方法<span class="number">1</span>： CDN引入</div><div class="line">&lt;script src=<span class="string">"//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"</span>&gt;<span class="xml"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></div><div class="line">&lt;script src=<span class="string">"http://jcrop-cdn.tapmodo.com/v2.0.0-RC1/js/Jcrop.js"</span>&gt;<span class="xml"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></div><div class="line">&lt;link rel=<span class="string">"stylesheet"</span> href=<span class="string">"http://jcrop-cdn.tapmodo.com/v2.0.0-RC1/css/Jcrop.css"</span> type=<span class="string">"text/css"</span>&gt;</div><div class="line">方法<span class="number">2</span>： 本地引入</div><div class="line">&lt;script src=<span class="string">"libs/jquery/1.10.2/jquery.min.js"</span>&gt;<span class="xml"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></div><div class="line">&lt;script src=<span class="string">"libs/Jcrop/js/Jcrop.js"</span>&gt;<span class="xml"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></div><div class="line">&lt;link rel=<span class="string">"stylesheet"</span> href=<span class="string">"libs/Jcrop/css/Jcrop.css"</span> type=<span class="string">"text/css"</span>&gt;</div></pre></td></tr></table></figure>
 </li>
 <li><p>HTML准备</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"thumb"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span> =<span class="string">“photo.jpg”</span>  <span class="attr">id</span> =<span class="string">“target”/</span>&gt;</span></div><div class="line">       <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
@@ -51,22 +53,17 @@
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> x, y, w, h;</div><div class="line">$(<span class="string">'#target'</span>).Jcrop(&#123;</div><div class="line">           setSelect: [<span class="number">0</span>, <span class="number">0</span>, <span class="number">10000</span>, <span class="number">10000</span>],</div><div class="line">           aspectRatio: <span class="number">2</span>,<span class="comment">//裁切框的宽高比</span></div><div class="line">           boxWidth: <span class="number">400</span>,<span class="comment">//图片盒子的宽度</span></div><div class="line">           bgColor: <span class="string">'red'</span>,</div><div class="line">       &#125;, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">           thumbnail = <span class="keyword">this</span>.initComponent(<span class="string">'Thumbnailer'</span>, &#123;<span class="attr">width</span>: <span class="number">240</span>, <span class="attr">height</span>: <span class="number">120</span>, <span class="attr">parent</span>: <span class="string">".thumb"</span>&#125;);<span class="comment">//加载缩略图</span></div><div class="line">           <span class="keyword">var</span> init = <span class="keyword">this</span>.getSelection();<span class="comment">//获取初始状态</span></div><div class="line">           <span class="built_in">console</span>.log(init);</div><div class="line">           x = init.x;</div><div class="line">           y = init.y;</div><div class="line">           w = init.w;</div><div class="line">           h = init.h;</div><div class="line">       &#125;);</div><div class="line">         <span class="keyword">var</span> container = $(<span class="string">'#original_img'</span>).Jcrop(<span class="string">'api'</span>).container;</div><div class="line">         container.on(<span class="string">'cropcreate cropmove'</span>, <span class="function"><span class="keyword">function</span> (<span class="params">e, s, c</span>) </span>&#123;</div><div class="line">           x = <span class="built_in">parseInt</span>(c.x);</div><div class="line">           y = <span class="built_in">parseInt</span>(c.y);</div><div class="line">           w = <span class="built_in">parseInt</span>(c.w);</div><div class="line">           h = <span class="built_in">parseInt</span>(c.h);</div><div class="line">       &#125;);</div></pre></td></tr></table></figure>
 </li>
 </ol>
-<h3 id="三、自己对Jcrop的源码进行了一点点的优化"><a href="#三、自己对Jcrop的源码进行了一点点的优化" class="headerlink" title="三、自己对Jcrop的源码进行了一点点的优化"></a>三、自己对Jcrop的源码进行了一点点的优化</h3><p> 由于直接使用Jcrop会报一个跨域错误，同时缩略图框位置不好调,对于要将缩略图放在其他盒子的需求无法实现，为此对其源码进行了一点优化</p>
-<ol>
-<li>打开Jcrop.js文件查找“jcrop-thumb”字段,让代码页面跳到如下图位置：<img src="/2016/12/10/Jcrop2-x（图片剪裁）插件使用教程/code.png" alt="[代码优化]" title="[代码优化]"></li>
-<li><p>将该位置的代码改为如下代码</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">this</span>.element = $(<span class="string">'&lt;div /&gt;'</span>).addClass(<span class="string">'jcrop-thumb'</span>)</div><div class="line">         .width(<span class="keyword">this</span>.width).height(<span class="keyword">this</span>.height)</div><div class="line">         .append(<span class="keyword">this</span>.preview)</div><div class="line">         .appendTo($(<span class="keyword">this</span>.parent)||<span class="keyword">this</span>.core.container);</div><div class="line">       &#125;</div><div class="line">$(<span class="keyword">this</span>.parent):为缩略图对象添加一个parent属性，用作：存放缩略图将要添加的父元素的选择器</div></pre></td></tr></table></figure>
-<p>使用：</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> x, y, w, h;</div><div class="line">$(<span class="string">"#btn_Jcrop"</span>).on(<span class="string">"click"</span>, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line"> </div><div class="line">  <span class="keyword">if</span> ($(<span class="keyword">this</span>).text() == <span class="string">"裁切图片"</span>) &#123;</div><div class="line">    $(<span class="keyword">this</span>).text(<span class="string">"保存图片"</span>);</div><div class="line">    $(<span class="string">'#original_img'</span>).Jcrop(&#123;</div><div class="line">      setSelect: [<span class="number">0</span>, <span class="number">0</span>, <span class="number">10000</span>, <span class="number">10000</span>],</div><div class="line">      aspectRatio: <span class="number">2</span>,<span class="comment">//裁切框的宽高比</span></div><div class="line">      boxWidth: <span class="number">400</span>,<span class="comment">//图片盒子的宽度</span></div><div class="line">      bgColor: <span class="string">'red'</span>,</div><div class="line">    &#125;, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">      thumbnail = <span class="keyword">this</span>.initComponent(<span class="string">'Thumbnailer'</span>, &#123;<span class="attr">width</span>: <span class="number">240</span>, <span class="attr">height</span>: <span class="number">120</span>, <span class="attr">parent</span>: <span class="string">".thumb"</span>&#125;);<span class="comment">//加载缩略图</span></div><div class="line">      <span class="keyword">var</span> init = <span class="keyword">this</span>.getSelection();<span class="comment">//获取初始状态</span></div><div class="line">      <span class="built_in">console</span>.log(init);</div><div class="line">      x = init.x;</div><div class="line">      y = init.y;</div><div class="line">      w = init.w;</div><div class="line">      h = init.h;</div><div class="line">    &#125;);</div></pre></td></tr></table></figure>
-</li>
-<li><p>优化报跨域错误的问题</p>
-<p>  a. 找到Jcrop.js代码的1761行<br>  b. 将里面的代码</p>
-  <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> s = <span class="keyword">this</span>.core.ui.stage, cxt = s.context;</div><div class="line"><span class="keyword">this</span>.context.putImageData(cxt.getImageData(<span class="number">0</span>,<span class="number">0</span>,s.canvas.width,s.canvas.height),<span class="number">0</span>,<span class="number">0</span>);</div></pre></td></tr></table></figure>
-<p>  c. 用try{}catch (e){}包裹，结果如下：</p>
-  <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">try</span>&#123;</div><div class="line">  <span class="keyword">var</span> s = <span class="keyword">this</span>.core.ui.stage, cxt = s.context;</div><div class="line">  <span class="keyword">this</span>.context.putImageData(cxt.getImageData(<span class="number">0</span>,<span class="number">0</span>,s.canvas.width,s.canvas.height),<span class="number">0</span>,<span class="number">0</span>);</div><div class="line">&#125;<span class="keyword">catch</span> (e)&#123;&#125;</div></pre></td></tr></table></figure>
-<p>至此跨域错误优化完成，可以放心的使用了。</p>
-</li>
-</ol>
+<h3 id="三、自己对Jcrop的源码进行了一点点的优化"><a href="#三、自己对Jcrop的源码进行了一点点的优化" class="headerlink" title="三、自己对Jcrop的源码进行了一点点的优化"></a>三、自己对Jcrop的源码进行了一点点的优化</h3><p> 由于直接使用Jcrop会报一个跨域错误，同时缩略图框位置不好调,对于要将缩略图放在其他盒子的需求无法实现，为此对其源码进行了一点优化<br> 1.打开Jcrop.js文件查找“jcrop-thumb”字段,让代码页面跳到如下图位置：<br><img src="/2016/12/10/Jcrop2-x（图片剪裁）插件使用教程/code.png" alt="[代码优化]" title="[代码优化]"><br> 2.将该位置的代码改为如下代码</p>
+ <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">this</span>.element = $(<span class="string">'&lt;div /&gt;'</span>).addClass(<span class="string">'jcrop-thumb'</span>)</div><div class="line">         .width(<span class="keyword">this</span>.width).height(<span class="keyword">this</span>.height)</div><div class="line">         .append(<span class="keyword">this</span>.preview)</div><div class="line">         .appendTo($(<span class="keyword">this</span>.parent)||<span class="keyword">this</span>.core.container);</div><div class="line">       &#125;</div><div class="line">$(<span class="keyword">this</span>.parent):为缩略图对象添加一个parent属性，用作：存放缩略图将要添加的父元素的选择器</div></pre></td></tr></table></figure>
+<p> 使用：<br> <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> x, y, w, h;</div><div class="line">$(<span class="string">"#btn_Jcrop"</span>).on(<span class="string">"click"</span>, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line"> </div><div class="line">  <span class="keyword">if</span> ($(<span class="keyword">this</span>).text() == <span class="string">"裁切图片"</span>) &#123;</div><div class="line">    $(<span class="keyword">this</span>).text(<span class="string">"保存图片"</span>);</div><div class="line">    $(<span class="string">'#original_img'</span>).Jcrop(&#123;</div><div class="line">      setSelect: [<span class="number">0</span>, <span class="number">0</span>, <span class="number">10000</span>, <span class="number">10000</span>],</div><div class="line">      aspectRatio: <span class="number">2</span>,<span class="comment">//裁切框的宽高比</span></div><div class="line">      boxWidth: <span class="number">400</span>,<span class="comment">//图片盒子的宽度</span></div><div class="line">      bgColor: <span class="string">'red'</span>,</div><div class="line">    &#125;, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">      thumbnail = <span class="keyword">this</span>.initComponent(<span class="string">'Thumbnailer'</span>, &#123;<span class="attr">width</span>: <span class="number">240</span>, <span class="attr">height</span>: <span class="number">120</span>, <span class="attr">parent</span>: <span class="string">".thumb"</span>&#125;);<span class="comment">//加载缩略图</span></div><div class="line">      <span class="keyword">var</span> init = <span class="keyword">this</span>.getSelection();<span class="comment">//获取初始状态</span></div><div class="line">      <span class="built_in">console</span>.log(init);</div><div class="line">      x = init.x;</div><div class="line">      y = init.y;</div><div class="line">      w = init.w;</div><div class="line">      h = init.h;</div><div class="line">    &#125;);</div></pre></td></tr></table></figure></p>
+<p> 3.优化报跨域错误的问题</p>
+<pre><code>a. 找到Jcrop.js代码的1761行
+b. 将里面的代码
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> s = <span class="keyword">this</span>.core.ui.stage, cxt = s.context;</div><div class="line"><span class="keyword">this</span>.context.putImageData(cxt.getImageData(<span class="number">0</span>,<span class="number">0</span>,s.canvas.width,s.canvas.height),<span class="number">0</span>,<span class="number">0</span>);</div></pre></td></tr></table></figure>
+
+c. 用try{}catch (e){}包裹，结果如下：
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">try</span>&#123;</div><div class="line">  <span class="keyword">var</span> s = <span class="keyword">this</span>.core.ui.stage, cxt = s.context;</div><div class="line">  <span class="keyword">this</span>.context.putImageData(cxt.getImageData(<span class="number">0</span>,<span class="number">0</span>,s.canvas.width,s.canvas.height),<span class="number">0</span>,<span class="number">0</span>);</div><div class="line">&#125;<span class="keyword">catch</span> (e)&#123;&#125;</div></pre></td></tr></table></figure>
+</code></pre><p>  至此跨域错误优化完成，可以放心的使用了。</p>
 ]]></content>
       
         <categories>
@@ -80,9 +77,9 @@
         
         <tags>
             
-            <tag> 学习 </tag>
-            
             <tag> 教程 </tag>
+            
+            <tag> 学习 </tag>
             
         </tags>
         
@@ -125,9 +122,9 @@
         
         <tags>
             
-            <tag> 学习 </tag>
-            
             <tag> 教程 </tag>
+            
+            <tag> 学习 </tag>
             
         </tags>
         
@@ -168,9 +165,9 @@
         
         <tags>
             
-            <tag> 学习 </tag>
-            
             <tag> 教程 </tag>
+            
+            <tag> 学习 </tag>
             
         </tags>
         
@@ -270,9 +267,9 @@
         
         <tags>
             
-            <tag> 学习 </tag>
-            
             <tag> 教程 </tag>
+            
+            <tag> 学习 </tag>
             
         </tags>
         
@@ -295,9 +292,9 @@
         
         <tags>
             
-            <tag> 学习 </tag>
-            
             <tag> 教程 </tag>
+            
+            <tag> 学习 </tag>
             
         </tags>
         
@@ -334,9 +331,9 @@
         
         <tags>
             
-            <tag> 学习 </tag>
-            
             <tag> 教程 </tag>
+            
+            <tag> 学习 </tag>
             
         </tags>
         
@@ -372,9 +369,9 @@
         
         <tags>
             
-            <tag> 随笔 </tag>
-            
             <tag> 学习 </tag>
+            
+            <tag> 随笔 </tag>
             
         </tags>
         
@@ -425,9 +422,9 @@
         
         <tags>
             
-            <tag> 学习 </tag>
-            
             <tag> 教程 </tag>
+            
+            <tag> 学习 </tag>
             
         </tags>
         
@@ -474,9 +471,9 @@
         
         <tags>
             
-            <tag> 随笔 </tag>
-            
             <tag> 学习 </tag>
+            
+            <tag> 随笔 </tag>
             
         </tags>
         
@@ -517,9 +514,9 @@
         
         <tags>
             
-            <tag> 学习 </tag>
-            
             <tag> 教程 </tag>
+            
+            <tag> 学习 </tag>
             
         </tags>
         
@@ -566,9 +563,9 @@
         
         <tags>
             
-            <tag> 学习 </tag>
-            
             <tag> 教程 </tag>
+            
+            <tag> 学习 </tag>
             
         </tags>
         
@@ -739,9 +736,9 @@
         
         <tags>
             
-            <tag> 学习 </tag>
-            
             <tag> 教程 </tag>
+            
+            <tag> 学习 </tag>
             
         </tags>
         
@@ -907,9 +904,9 @@
         
         <tags>
             
-            <tag> 学习 </tag>
-            
             <tag> 教程 </tag>
+            
+            <tag> 学习 </tag>
             
         </tags>
         
@@ -962,9 +959,9 @@
         
         <tags>
             
-            <tag> 随笔 </tag>
-            
             <tag> 学习 </tag>
+            
+            <tag> 随笔 </tag>
             
         </tags>
         

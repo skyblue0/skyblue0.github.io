@@ -9,7 +9,7 @@
   <title>Jcrop2.x（图片剪裁）插件使用教程 | ZZJ 博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="Jcrop2.x（图片剪裁）插件使用教程最近项目中用到了图片裁切上传，可是没接触过，不知用啥插件好，于是便上百度搜了一下，找到了 Jcrop2.x的插件。下面说一下使用心得与使用的基本步骤。 使用步骤一、文件下载首先说明一下，最好使用Jcrop2.0版本以上的，因为2.0以下的版本用户体验一点都不友好，其中有很多的坑，慎用！  进入官网找到“Download Jcrop”点击进入官网地址官方文档">
-<meta name="keywords" content="学习,教程">
+<meta name="keywords" content="教程,学习">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Jcrop2.x（图片剪裁）插件使用教程">
 <meta property="og:url" content="http://yoursite.com/2016/12/10/Jcrop2-x（图片剪裁）插件使用教程/index.html">
@@ -205,7 +205,7 @@
 <li><p>点击左上方的Download Jcrop2.x进行下载，如下图</p>
 <img src="/2016/12/10/Jcrop2-x（图片剪裁）插件使用教程/download.png" alt="[下载]" title="[下载]">
 <h3 id="二、使用步骤"><a href="#二、使用步骤" class="headerlink" title="二、使用步骤"></a>二、使用步骤</h3><p>1.文件引入</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">方法<span class="number">1</span>： CDN引入</div><div class="line">&lt;script src=<span class="string">"//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"</span>&gt;&lt;/script&gt;</div><div class="line">&lt;script src=<span class="string">"http://jcrop-cdn.tapmodo.com/v2.0.0-RC1/js/Jcrop.js"</span>&gt;&lt;/script&gt;</div><div class="line">&lt;link rel=<span class="string">"stylesheet"</span> href=<span class="string">"http://jcrop-cdn.tapmodo.com/v2.0.0-RC1/css/Jcrop.css"</span> type=<span class="string">"text/css"</span>&gt;</div><div class="line">方法<span class="number">2</span>： 本地引入</div><div class="line">&lt;script src=<span class="string">"libs/jquery/1.10.2/jquery.min.js"</span>&gt;&lt;/script&gt;</div><div class="line">&lt;script src=<span class="string">"libs/Jcrop/js/Jcrop.js"</span>&gt;&lt;/script&gt;</div><div class="line">&lt;link rel=<span class="string">"stylesheet"</span> href=<span class="string">"libs/Jcrop/css/Jcrop.css"</span> type=<span class="string">"text/css"</span>&gt;</div></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">方法<span class="number">1</span>： CDN引入</div><div class="line">&lt;script src=<span class="string">"//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"</span>&gt;<span class="xml"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></div><div class="line">&lt;script src=<span class="string">"http://jcrop-cdn.tapmodo.com/v2.0.0-RC1/js/Jcrop.js"</span>&gt;<span class="xml"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></div><div class="line">&lt;link rel=<span class="string">"stylesheet"</span> href=<span class="string">"http://jcrop-cdn.tapmodo.com/v2.0.0-RC1/css/Jcrop.css"</span> type=<span class="string">"text/css"</span>&gt;</div><div class="line">方法<span class="number">2</span>： 本地引入</div><div class="line">&lt;script src=<span class="string">"libs/jquery/1.10.2/jquery.min.js"</span>&gt;<span class="xml"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></div><div class="line">&lt;script src=<span class="string">"libs/Jcrop/js/Jcrop.js"</span>&gt;<span class="xml"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></div><div class="line">&lt;link rel=<span class="string">"stylesheet"</span> href=<span class="string">"libs/Jcrop/css/Jcrop.css"</span> type=<span class="string">"text/css"</span>&gt;</div></pre></td></tr></table></figure>
 <p>2.HTML准备</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"thumb"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span> =<span class="string">“photo.jpg”</span>  <span class="attr">id</span> =<span class="string">“target”/</span>&gt;</span></div><div class="line">       <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
 <p>3.js代码</p>
@@ -256,11 +256,11 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">学习</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">教程</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">教程</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">学习</a>
         		</li>
       		
 		</ul>
@@ -345,11 +345,11 @@
   
 <nav id="article-nav">
   
-    <a href="/2017/08/05/404.html/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2016/12/22/gulp（打包工具）使用手册/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          (no title)
+          Gulp(打包工具)使用教程
         
       </div>
     </a>
@@ -514,7 +514,7 @@ MathJax.Hub.Queue(function() {
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">随笔</a>
+                <a href="javascript:void(0)" class="js-tag color3">教程</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -522,7 +522,7 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">教程</a>
+                <a href="javascript:void(0)" class="js-tag color3">随笔</a>
               </li>
             
             <div class="clearfix"></div>
